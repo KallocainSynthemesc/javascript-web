@@ -1,0 +1,2355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript Algo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+      <img src="image/js_logo.svg" class="logo">
+      <div id="presentation-area">
+        <section class="presentation">
+          <!--<img src="image/js_logo.svg" class="logo">-->
+
+          <!--slide 1-->
+          <div class="slide show">
+            <div class="heading">
+              Présentation sur Javascript
+            </div>
+            <div class="content grid center">
+              <h3 class="title">
+                Algorithme Javascript <br/>
+              </h3>
+              <p class="sub-title">
+                Concepts de base et avancés
+              </p>
+              <p>Mon portefeuille</p>
+              <p><a href="https://kilian-schropp.surge.sh/">https://kilian-schropp.surge.sh/</a></p>
+            </div>
+          </div>
+
+          <!--slide 2-->
+          <div class="slide">
+            <img src="image/html-5-logo.svg" class="html-css-logo">
+            <div class="heading">
+              HTML, CSS et JS
+            </div>
+            <div class="content grid center">
+              <h3 class="title">
+                HTML
+              </h3>
+              <p class="sub-title">
+                La structure de la page
+              </p>
+              <p>Définition du contenu</p>
+            </div>
+          </div>
+
+          <!--slide 3-->
+          <div class="slide">
+            <img src="image/css-3-logo.svg" class="html-css-logo">
+            <div class="heading">
+              HTML, CSS et JS
+            </div>
+            <div class="content grid center">
+              <h3 class="title">
+                CSS
+              </h3>
+              <p class="sub-title">
+                Spécifie le design
+              </p>
+              <ul>
+                <li>L’organisation de la structure (layout)</li>
+                <li>Le style des éléments (couleurs, décorations, tailles...)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!--slide 4-->
+          <div class="slide">
+            <img src="image/js_logo.svg" class="html-css-logo">
+            <div class="heading">
+              HTML, CSS et JS
+            </div>
+            <div class="content grid center">
+              <h3 class="title">
+                JS (Javascript)
+              </h3>
+              <p class="sub-title">
+                La logique dans la page
+              </p>
+              <ul>
+                <li>Algorithme côté client</li>
+                <li>Interaction avec l’utilisateur (boutons, formulaires)</li>
+                <li>Interaction avec le navigateur</li>
+              </ul>
+            </div>
+          </div>
+
+          <!--slide 5-->
+          <div class="slide">
+            <img src="image/history.svg" class="html-css-logo" style="left: 75%; top:37%">
+            <img src="image/oracle-logo.svg" class="html-css-logo" style="left: 3%; top:75%">
+            <div class="heading">
+              Historique
+            </div>
+            <div class="content grid center">
+              <h3 class="title">
+                Langage de script créé en 1995 (Netscape)
+              </h3>
+              <p class="sub-title">
+                Marque déposé de Sun Microsystems, Oracle maintenant
+              </p>
+            </div>
+          </div>
+
+          <!--slide 6-->
+          <div class="slide">
+            <img src="image/java-logo.svg" class="html-css-logo" style="left: 75%; top:45%">
+            <img src="image/python-logo.svg" class="html-css-logo" style="left: 2%; top:45%">
+            <div class="heading">
+              Historique
+            </div>
+            <div class="content grid center">
+              <h3 class="title">
+                Inspiré par Java et Python
+              </h3>
+              <ul>
+                <li>Style Java</li>
+                <li>Facilité d'écriture de code du python</li>
+              </ul>
+              
+            </div>
+          </div>
+
+          <!--slide 7-->
+          <div class="slide">
+            <div class="heading">
+              Historique
+            </div>
+            <div class="content grid center">
+              <h3 class="title">
+                Exécution côté client
+              </h3>
+              <div class="content">
+                <p class="sub-title">
+                  Ajoute du dynamisme dans les pages
+                </p>
+                <ul>
+                  <li>Interactions utilisateurs, animations</li>
+                  <li>Aide à la navigation</li>
+                  <li>Traitement côté client</li>
+                  <li>Requêtes asynchrones</li>
+                </ul>
+              </div>
+              <iframe id="running" src="image/runningMan.svg" width="30%" height="50%"  frameborder="0" style="right: 0%; bottom:0%; position:absolute"></iframe>
+            </div>
+          </div>
+
+          <!--slide 8-->
+          <div class="slide">
+            <div class="heading">
+              Historique
+            </div>
+            <div class="content grid center">
+              <h3 class="title">
+                Utilisation
+              </h3>
+              <p class="sub-title">
+                <img src="image/popularity.svg" style="width: 49%;">
+              </p>
+            </div>
+          </div>
+
+          <!--slide 8-->
+          <div class="slide">
+            <div class="heading">
+              Le référencement
+            </div>
+            <div class="content">
+              <p>Les moteurs de recherche fonctionnent grâce à trois fonctions principales :
+              </p>
+              <ol>
+                <li><b>Crawling</b>: Ils parcourent l'internet à la recherche de contenu, en examinant le code/contenu de chaque URL qu'ils trouvent.</li>
+                <li><b>Indexing</b>: Stocker et organiser le contenu trouvé au cours du processus de crawling. Une fois qu'une page est dans l'index, elle est dans la course pour être affichée comme résultat aux requêtes pertinentes.</li>
+                <li><b>Ranking</b>: Fournir les éléments de contenu qui répondront le mieux à la requête d'un chercheur, ce qui signifie que les résultats sont classés du plus pertinent au moins pertinent. </li>
+              </ol>
+              <iframe id="magnifier" src="magnifier.html" width="70%" height="50%"  frameborder="0" style="right: 0%; bottom:0%; position:absolute"></iframe>
+            </div>
+          </div>
+
+          <!--slide 8-->
+          <div class="slide">
+            <div class="heading">
+              Le référencement - Crawling
+            </div>
+            <div class="content">
+              <p>Le crawling est le processus de découverte au cours duquel les moteurs de recherche envoient une équipe de robots 
+                (appelés crawlers ou spiders) pour trouver du contenu nouveau et mis à jour.
+              </p>
+              <iframe id="robots" src="robots.html" width="100%" height="50%"  frameborder="0" style="right: 0%; bottom:0%; position:absolute"></iframe>
+            </div>
+          </div>
+
+          <!--slide 8-->
+          <div class="slide">
+            <div class="heading">
+              Le référencement - Indexing
+            </div>
+            <div class="content">
+              <p>Les moteurs de recherche traitent et stockent les informations qu'ils trouvent dans un index, 
+                une énorme base de données de tout le contenu qu'ils ont découvert et qu'ils jugent suffisamment bon pour être proposé aux chercheurs.
+              </p>
+              <iframe id="library" src="library.html" width="100%" height="64%"  frameborder="0" style="right: 0%; bottom:0%; position:absolute"></iframe>
+            </div>
+          </div>
+
+          <!--slide 8-->
+          <div class="slide">
+            <div class="heading">
+              Le référencement - Ranking
+            </div>
+            <div class="content">
+              <p>Lorsqu'une personne effectue une recherche, les moteurs de recherche parcourent leur index à la recherche 
+                de contenu hautement pertinent et ordonnent ensuite ce contenu dans l'espoir de répondre à la requête de l'internaute.
+              </p>
+              <img src="image/podium.svg" style="width: 35%;">
+            </div>
+          </div>
+
+          <!--slide 8-->
+          <div class="slide">
+            <div class="heading">
+              Le référencement - Google Bot
+            </div>
+            <div class="content">
+              <p>Les erreurs de navigation courantes qui peuvent empêcher les robots d'indexation de voir l'intégralité de votre site :
+              </p>
+              <ol>
+                <li>La navigation mobile affiche des résultats différents de ceux de la navigation de bureau.</li>
+                <li>Tout type de navigation où les éléments du menu ne se trouvent pas dans le code HTML, comme les navigations en JavaScript.</li>
+                <li>La personnalisation, ou l'affichage d'une navigation unique pour un type spécifique de visiteur par rapport aux autres.</li>
+                <li>Oublier de créer un lien vers une page principale de votre site Web par le biais de votre système de navigation - n'oubliez pas que les liens sont les chemins que suivent les robots d'exploration pour accéder aux nouvelles pages !</li>
+              </ol>
+              <img src="image/googlebot.png" style="width: 35%;">
+            </div>
+          </div>
+
+          <!--slide 8-->
+          <div class="slide">
+            <div class="heading">
+              Le référencement - Robots.txt
+            </div>
+            <div class="content">
+              <p>Les fichiers Robots.txt sont situés dans le répertoire racine des sites web et suggèrent les parties de votre 
+                site que les moteurs de recherche doivent ou ne doivent pas explorer, ainsi que la vitesse à laquelle ils explorent votre site.
+              </p>
+              <br>
+              <p>Comment Googlebot traite-t-il les fichiers robots.txt ?</p>
+              <ol>
+                <li>Si Googlebot ne trouve pas de fichier robots.txt pour un site, il procède à l'exploration du site.</li>
+                <li>Si Googlebot trouve un fichier robots.txt pour un site, il se conformera généralement aux suggestions et procédera à l'exploration du site.</li>
+                <li>Si Googlebot rencontre une erreur en essayant d'accéder au fichier robots.txt d'un site et ne peut pas déterminer s'il existe ou non, il n'explorera pas le site.</li>
+              </ol>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - D comme Document 
+            </div>
+            <div class="content">
+              <p>Le Document Object Model ne peut pas fonctionner sans un document. 
+                Lorsque vous créez une page web et la chargez dans un navigateur web, le DOM la fait vivre.
+              </p>
+            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+              <pre style="margin: 0; line-height: 125%">
+                <span style="color: #557799">&lt;!DOCTYPE html&gt;</span>
+                <span style="color: #007700">&lt;html&gt;</span>
+                  <span style="color: #007700">&lt;head&gt;</span>
+                      <span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">charset=</span><span style="background-color: #fff0f0">&quot;UTF-8&quot;</span><span style="color: #007700">&gt;</span>
+                      <span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">name=</span><span style="background-color: #fff0f0">&quot;viewport&quot;</span> <span style="color: #0000CC">content=</span><span style="background-color: #fff0f0">&quot;width=device-width, initial-scale=1.0&quot;</span><span style="color: #007700">&gt;</span>
+                      <span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">http-equiv=</span><span style="background-color: #fff0f0">&quot;X-UA-Compatible&quot;</span> <span style="color: #0000CC">content=</span><span style="background-color: #fff0f0">&quot;ie=edge&quot;</span><span style="color: #007700">&gt;</span>
+                      <span style="color: #007700">&lt;title&gt;</span>Document<span style="color: #007700">&lt;/title&gt;</span>
+                  <span style="color: #007700">&lt;/head&gt;</span>
+                  <span style="color: #007700">&lt;body&gt;</span>
+                  <span style="color: #007700">&lt;/body&gt;</span>
+                <span style="color: #007700">&lt;/html&gt;</span></pre>
+            </div>
+
+              <img src="image/htmldoc.svg" class="html-css-logo" style="width: 35%;left:70%; top:40%">
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - D comme Document 
+            </div>
+            <div class="content">
+              <p>Nous pouvons lier css et javascript dans notre document HTML
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #557799">&lt;!DOCTYPE html&gt;</span>
+                  <span style="color: #007700">&lt;html&gt;</span>
+                  <span style="color: #007700">&lt;head&gt;</span>
+                    <span style="color: #007700">&lt;title&gt;</span>Parcel Sandbox<span style="color: #007700">&lt;/title&gt;</span>
+                    <span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">charset=</span><span style="background-color: #fff0f0">&quot;UTF-8&quot;</span> <span style="color: #007700">/&gt;</span>
+                    <span style="color: #007700">&lt;link</span> <span style="color: #0000CC">rel=</span><span style="background-color: #fff0f0">&quot;stylesheet&quot;</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;./src/styles.css&quot;</span> <span style="color: #007700">/&gt;</span>
+                  <span style="color: #007700">&lt;/head&gt;</span>
+
+                  <span style="color: #007700">&lt;body&gt;</span>
+                    <span style="color: #007700">&lt;script </span><span style="color: #0000CC">src=</span><span style="background-color: #fff0f0">&quot;src/index.js&quot;</span><span style="color: #007700">&gt;&lt;/script&gt;</span>
+                  <span style="color: #007700">&lt;/body&gt;</span>
+                  <span style="color: #007700">&lt;/html&gt;</span></pre>
+              </div>
+              <img src="image/htmldoc.svg" class="html-css-logo" style="width: 35%;left:70%; top:40%">
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - O comme Object 
+            </div>
+            <div class="content">
+              <p>Dans le cours Algorithme javascript, je vous ai montré les objets.
+              </p>
+              <p>Il existe trois types d'objets différents en javascript. </p>
+              <ol>
+                <li>Objets définis par l'utilisateur. On a fait ça</li>
+                <li>Objets natifs comme Array, Math, Date. On a fait ça</li>
+                <li><b>Objet hôte qui est défini par le navigateur. Wow c'est nouveau!</b></li>
+              </ol>
+              <br>
+              <p>Exemple: Objets définis par l'utilisateur</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">const</span> person <span style="color: #333333">=</span> {
+                    firstName<span style="color: #333333">:</span> <span style="background-color: #fff0f0">&quot;Kilian&quot;</span>,
+                    lastName<span style="color: #333333">:</span> <span style="background-color: #fff0f0">&quot;Schropp&quot;</span>,
+                    age<span style="color: #333333">:</span> <span style="color: #0000DD; font-weight: bold">28</span>,
+                    eyeColor<span style="color: #333333">:</span> <span style="background-color: #fff0f0">&quot;brown&quot;</span>
+                  };</pre>
+                </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - O comme Object - Window host object
+            </div>
+            <div class="content">
+              <p>L'objet <b>window</b> est une représentation de la fenêtre du navigateur elle-même. Les propriétés et les méthodes de l'objet <b>window</b> sont souvent appelées <b>Browser Object Model</b>.
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/eloquent-lederberg-nopz22?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:85%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - M comme Model - DOM BOM
+            </div>
+            <div class="content">
+              <div class="flex-container">
+                <div>
+                  <img src="image/bomdom.svg" style="max-width: 80%;max-height: 80%;">
+                </div>
+                <div>
+                  <img src="image/domtom.svg" style="max-width: 80%;max-height: 80%;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - M comme Model
+            </div>
+            <div class="content">
+              <p><b>Modèle</b> d'arbre familier pour représenter un document HTML</p>
+              <div class="flex-container">
+                <div style="width:50%">
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%; white-space: pre-line;">
+                      <span style="color: #557799">&lt;!DOCTYPE html&gt;</span>
+                      <span style="color: #007700">&lt;html&gt;</span>
+                      <span style="color: #007700">&lt;head&gt;</span>
+                      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">charset=</span><span style="background-color: #fff0f0">&quot;UTF-8&quot;</span><span style="color: #007700">&gt;</span>
+                      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">name=</span><span style="background-color: #fff0f0">&quot;viewport&quot;</span> <span style="color: #0000CC">content=</span><span style="background-color: #fff0f0">&quot;width=device-width, initial-scale=1.0&quot;</span><span style="color: #007700">&gt;</span>
+                      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">http-equiv=</span><span style="background-color: #fff0f0">&quot;X-UA-Compatible&quot;</span> <span style="color: #0000CC">content=</span><span style="background-color: #fff0f0">&quot;ie=edge&quot;</span><span style="color: #007700">&gt;</span>
+                      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;title&gt;</span>Document<span style="color: #007700">&lt;/title&gt;</span>
+                      <span style="color: #007700">&lt;/head&gt;</span>
+                      <span style="color: #007700">&lt;body&gt;</span>
+                      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;p&gt;</span>Salut<span style="color: #007700">&lt;/p&gt;</span>
+                      <span style="color: #007700">&lt;/body&gt;</span>
+                      <span style="color: #007700">&lt;/html&gt;</span></pre>
+                    </div>
+                </div>
+                <div>
+                  <img src="image/domrepresentation.svg" style="max-width: 100%;max-height: 100%;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - M comme Model
+            </div>
+            <div class="content">
+              <div style="overflow-y: scroll; height:90%">
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    <span style="color: #557799">&lt;!DOCTYPE html&gt;</span>
+                    <span style="color: #007700">&lt;html&gt;</span>
+                    <span style="color: #007700">&lt;head&gt;</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">charset=</span><span style="background-color: #fff0f0">&quot;UTF-8&quot;</span><span style="color: #007700">&gt;</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">name=</span><span style="background-color: #fff0f0">&quot;viewport&quot;</span> <span style="color: #0000CC">content=</span><span style="background-color: #fff0f0">&quot;width=device-width, initial-scale=1.0&quot;</span><span style="color: #007700">&gt;</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">http-equiv=</span><span style="background-color: #fff0f0">&quot;X-UA-Compatible&quot;</span> <span style="color: #0000CC">content=</span><span style="background-color: #fff0f0">&quot;ie=edge&quot;</span><span style="color: #007700">&gt;</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;title&gt;</span>Document<span style="color: #007700">&lt;/title&gt;</span>
+                    <span style="color: #007700">&lt;/head&gt;</span>
+                    <span style="color: #007700">&lt;body&gt;</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;main&gt;</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;h1&gt;</span>Apples<span style="color: #007700">&lt;/h1&gt;</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;p&gt;</span>The apple is the pomaceous fruit of the apple tree.<span style="color: #007700">&lt;/p&gt;</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;article&gt;</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;h2&gt;</span>Red Delicious<span style="color: #007700">&lt;/h2&gt;</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;p&gt;</span> These bright red apples are the most common found in many supermarkets. <span style="color: #007700">&lt;/p&gt;</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;p&gt;</span>…<span style="color: #007700">&lt;/p&gt;</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;p&gt;</span>…<span style="color: #007700">&lt;/p&gt;</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;/article&gt;</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">&lt;/main&gt;</span>
+                    <span style="color: #007700">&lt;/body&gt;</span>
+                    <span style="color: #007700">&lt;/html&gt;</span>
+                    </pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - M comme Model
+            </div>
+            <div class="content">
+              <p>Nous pouvons accéder à de nombreuses informations sur la relation entre les éléments.</p>
+              <img src="image/anotherdommodel.svg" style="height:78%">
+              <p>par exemple, quelle est la relation entre &lt;h1&gt; et &lt;p&gt; ?</p>
+              <p>Quelle est la relation entre &lt;body&gt; et &lt;main&gt; ?</p>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - Exemple d'accès simple
+            </div>
+            <div class="content">
+              <p>Le code suivant montre que nous pouvons déjà parcourir notre arbre de famille avec un simple accès à la propriété d'un objet</p>
+              <iframe src="https://codesandbox.io/embed/zealous-lake-g68pud?fontsize=14&hidenavigation=1&theme=dark"
+                style="width:100%; height:90%; border:0; border-radius: 4px; overflow:hidden;"
+                title="zealous-lake-g68pud"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - Nodes
+            </div>
+            <div class="content">
+              <p>Au lieu d'utiliser le terme "arbre de famille", il est plus exact d'appeler un document un node tree (arbre de nœuds).</p>
+              <p><b>Element Nodes:</b> &lt;p&gt; &lt;span&gt; &lt;ol&gt; &lt;div&gt; &lt;img&gt;</p>
+              <p><b>Text nodes:</b> le n&oelig;ud de l'&eacute;l&eacute;ment &lt;p&gt; peut contenir le texte &quot;Ceci est un exemple de texte&quot;. Le texte &agrave; l'int&eacute;rieur de &lt;p&gt; est appel&eacute; un n&oelig;ud de texte.</p>
+              <p><b>Attribute nodes:</b> Les attributs sont utilisés pour donner des informations plus spécifiques sur un élément. L'attribut title par exemple.</p>
+              <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; width:70%"><pre style="margin: 0; line-height: 125%"> <span style="color: #007700">&lt;p</span> <span style="color: #0000CC">title=</span><span style="background-color: #fff0f0">&quot;le titre est un attribut node&quot;</span><span style="color: #007700">&gt;</span>Ceci est un exemple de texte<span style="color: #007700">&lt;/p&gt;</span> </pre></div>
+              <img src="image/attributeNodeDia.svg" class="html-css-logo" style="height:33%; left: 67%; top: 62%;">
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - Nodes
+            </div>
+            <div class="content">
+              <p>Cet exemple montre qu'il est possible d'accéder au nœud d'attribut et au nœud de texte d'une manière assez simple.</p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/element-node-92kos5?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:85%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - getElementById()
+            </div>
+            <div class="content">
+              <p>L'exemple suivant modifie le contenu (le innerHTML) de l'élément &lt;p&gt; avec id="demo" :
+              </p>
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://codepen.io/Kallocain/embed/zYaKdWx"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - getElementsByTagName()
+            </div>
+            <div class="content">
+              <p>Cet exemple trouve tous les éléments &lt;p&gt;:
+              </p>
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://codepen.io/Kallocain/embed/GRGjQzL"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - getElementsByClassName()
+            </div>
+            <div class="content">
+              <p>Si vous voulez trouver tous les éléments HTML ayant le même nom de classe, utilisez getElementsByClassName().
+              </p>
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://codepen.io/Kallocain/embed/abKmqrq"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - querySelectorAll()
+            </div>
+            <div class="content">
+              <p>Si vous voulez trouver tous les éléments HTML qui correspondent à un sélecteur CSS spécifié 
+                (id, noms de classe, types, attributs, valeurs des attributs, etc.), utilisez la méthode querySelectorAll().
+              </p>
+              <iframe
+              frameborder="0"
+              height="90%"  
+              src="https://codepen.io/Kallocain/embed/qBKaoBy"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - exercice
+            </div>
+            <div class="content">
+              <p>Dans l'exemple suivant, j'ai déjà affiche l'objet avec l'id "purchases". 
+                Pouvez-vous faire un console.log avec l'élément &lt;h1&gt; et &lt;p&gt; ?
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/node-access-exercice-8sy7z3?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:95%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - Aperçu
+            </div>
+            <div class="content">
+              <p><b>Voici un résumé rapide de ce que vous avez vu jusqu'à présent :</b>
+              </p>
+              <br>
+              <p>1. Un document est un arbre composé de nœuds (Node tree)</p>
+              <p>2. Il existe différents types de nœuds : éléments, attributs, texte, etc.</p>
+              <p>3. Vous pouvez vous diriger vers un nœud d'élément spécifique en utilisant getElementById et d'autres méthodes.</p>
+              <p>4. Chacun de ces noeuds est un objet</p>
+              <br>
+              <p><b>Je veux maintenant vous montrer certaines des propriétés et méthodes associées à ces objets.</b></p>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - getAttribute
+            </div>
+            <div class="content">
+              <p>Vous avez vu des façons d'obtenir des nœuds d'éléments en utilisant getElementById par exemple.
+              </p>
+              <p>Une fois que vous avez obtenu un nœud d'élément, vous pouvez trouver les valeurs de n'importe lequel de ses attributs avec la méthode <b>getAttribute</b>.</p>
+
+              <p style="color:red">Vous ne pouvez utiliser getAttribute que sur les nœuds d'éléments, pas sur l'objet document.</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">const</span> paragraph <span style="color: #333333">=</span> <span style="color: #007020">document</span>.getElementyByTagName(<span style="background-color: #fff0f0">&quot;p&quot;</span>)[0]
+
+                  <span style="color: #008800; font-weight: bold">const</span> attr <span style="color: #333333">=</span> paragraph.getAttribute(<span style="background-color: #fff0f0">&quot;title&quot;</span>)</pre>
+              </div>
+
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - getAttribute
+            </div>
+            <div class="content">
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/getattribute-example-qx3i43?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - setAttribute
+            </div>
+            <div class="content">
+              <p>Dans l'exemple précédent, je vous ai montré <b>getAttribute</b>. 
+                Je vous ai également montré que nous ne pouvions pas simplement le modifier en lui attribuant une nouvelle valeur. 
+                Heureusement, nous avons <b>setAttribute</b>!
+              </p>
+              <br>
+              <p>comme getAttribute, la méthode ne fonctionne que sur les nœuds d'éléments. Cependant, elle prend deux arguments :</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">object.setAttribute(attribute,value)</pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - setAttribute
+            </div>
+            <div class="content">
+              <p>pouvez-vous changer le titre de mon paragraphe avec la méthode setAttribute ?
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/setattribute-exercice-o59dxo?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Event handlers
+            </div>
+            <div class="content">
+              <p>Les événements HTML sont des "choses" qui arrivent aux éléments HTML. Lorsque JavaScript est utilisé dans les pages HTML, il peut "réagir" à ces événements.
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/onclick-event-handler-example-mt83wd?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:95%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Event handlers
+            </div>
+            <div class="content">
+              <p>Ok cool mais mélanger html et javascript n'est pas la meilleure pratique. 
+                Spécifier onclick dans le fichier html est déjà un pas dans la mauvaise direction. Voici un exemple amélioré.
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/on-click-seperated-from-html-d1bucx?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:95%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Event handlers - onclick vs addEventListener
+            </div>
+            <div class="content">
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">var</span> h <span style="color: #333333">=</span> <span style="color: #007020">document</span>.getElementById(<span style="background-color: #fff0f0">&#39;a&#39;</span>);
+                  h.onclick <span style="color: #333333">=</span> doThing_1;
+                  h.onclick <span style="color: #333333">=</span> doThing_2;
+
+                  h.addEventListener(<span style="background-color: #fff0f0">&#39;click&#39;</span>, doThing_3);
+                  h.addEventListener(<span style="background-color: #fff0f0">&#39;click&#39;</span>, doThing_4);</pre>
+              </div>
+              <br>
+              <p>Les fonctions 2, 3 et 4 fonctionnent, mais pas la 1. Cela est dû au fait que addEventListener 
+                n'écrase pas les gestionnaires d'événements existants, 
+                alors que onclick écrase tout gestionnaire d'événements onclick = fn existant.</p>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Event handlers - load/onload
+            </div>
+            <div class="content">
+              <p>Message à moi-même : Cet exemple ne fonctionne pas dans la sandbox et doit être téléchargé et exécuté localement pour une raison quelconque. <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event">source</a></p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/onload-load-ybfkkd?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="https://codesandbox.io/embed/onload-load-ybfkkd?fontsize=14&hidenavigation=1&theme=dark"
+                  style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                  title="onload/load"
+                  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Image Galery
+            </div>
+            <div class="content">
+              <p>Il est temps de mettre en pratique ce que nous avons appris jusqu'à présent et de plonger plus profondément dans JavaScript et le DOM.
+              </p>
+              <p>Ce sera une mise en œuvre très simple d'une galerie d'images. </p>
+              <br>
+              <p>
+                Nous identifions les parties les plus importantes :
+              </p>
+              <ol>
+                <li>Le HTML est déjà fait, cool</li>
+                <li>Nous avons un élément img dans le conteneur div.</li>
+                <li>Nous devons modifier l'attribut src avec une fonction javascript (setAttribut ou access direct a src)</li>
+                <li>Nous avons une notation spéciale appelée onclick qui exécute cette fonction pour nous</li>
+              </ol>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Image Galery
+            </div>
+            <div class="content">
+              <p>Pouvez-vous modifier la fonction showImage pour qu'elle change la grande image affichée lorsque je clique sur une autre image ? 
+                Une fois que c'est fait, pouvez-vous remplacer onclick dans le html par addEventListener dans le javascript ?
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/image-galery-2u2pkx?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:95%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - childNodes
+            </div>
+            <div class="content">
+              <p>La propriété childNodes est un moyen d'obtenir des informations sur les enfants de n'importe quel élément dans l'arborescence des nœuds d'un document.
+                nodeName me donne le nom de l'élément. Donc pour &lt;p&gt;, ce serait "P".
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/childnode-eo78e4?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:95%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - childNodes
+            </div>
+            <div class="content">
+              <p>nous avons une liste contenant café, thé et lait. 
+                Pouvez-vous écrire du code JS qui imprimant chaque list item text à la console ? 
+                Astuce : nodeName et textContent ou innerHTML.
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/childnodes-exercice-gssl55?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:95%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+                    
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - nodeType
+            </div>
+            <div class="content">
+              <p>La propriété childNodes renvoie un tableau contenant tous les types de noeuds, et pas seulement les noeuds d'éléments. 
+                Nous pouvons utiliser la propriété nodeType sur n'importe quel nœud d'un document pour déterminer le type de nœud auquel nous avons affaire.
+              </p>
+              <br>
+              <p>La propriété nodeType est appelée comme ceci.</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">node.nodeType</pre></div>
+              <br>
+              <p>Au lieu de renvoyer une chaîne comme "element" ou "attribute", il renvoie un nombre.</p>
+              <ul>
+                <li>Les nœuds des <b>Elements</b> ont une valeur nodeType de <b>1</b></li>
+                <li>Les nœuds d'<b>Attribute</b> ont une valeur nodeType de <b>2</b></li>
+                <li>Les nœuds de <b>Text</b> ont une valeur nodeType de <b>3</b></li>
+              </ul>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - nodeType
+            </div>
+            <div class="content">
+              <p>Pouvez-vous imprimer sur la console tous les noeuds enfants qui sont dans l'élément body et qui sont de type "element" ?
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/nodetype-exercice-w0yd82?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - nodeValue
+            </div>
+            <div class="content">
+              <p>Si vous souhaitez modifier la valeur d'un nœud de texte, 
+                il existe une propriété DOM appelée nodeValue qui peut être utilisée pour obtenir (et définir) la valeur d'un nœud.
+              </p>
+              <div class="flex-container">
+                <div>
+                  <br>
+                  <p>Il y a cependant un hic. Si vous obtenez par exemple un élément comme &lt;p&gt;, vous ne pouvez pas accéder directement au texte avec nodeValue parce que le texte est contenu dans un élément enfant de type text.</p>
+                </div>
+                <div>
+                  <img src="image/attributeNodeDia.svg" style="width: 90%;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - nodeValue
+            </div>
+            <div class="content">
+              <p>Exemple comment obtenir la nodeValue
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/nodevalue-b0zm85?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - attributes
+            </div>
+            <div class="content">
+              <p>Les nœuds d'attributs sont contenus par un nœud d'élément. 
+                Cependant, ils ne sont pas considérés comme des nœuds enfants et ne peuvent pas être reçus à l'aide de la propriété childNodes.
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/get-attribute-list-o0dslt?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:85%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - firstChild / lastChild
+            </div>
+            <div class="content">
+              <p>Il existe une façon abrégée d'écrire childNodes[0]. 
+                Lorsque vous souhaitez obtenir la valeur du premier nœud du tableau childNodes, vous pouvez utiliser firstChild
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">node.firstChild</pre></div>
+              <p>est la même chose que</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">node.childNodes[<span style="color: #0000DD; font-weight: bold">0</span>]</pre></div>
+              <p>C'est un raccourci élégant et plus facile à lire.</p>
+              <br>
+              <p>Si vous n'êtes pas encore convaincu, regardez cet exemple.</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">node.lastChild</pre></div>
+              <p>est la même chose que</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">node.childNodes[node.childnodes.length<span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">1</span>]</pre></div>
+
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - firstChild
+            </div>
+            <div class="content">
+              <p>pouvez-vous modifier le childNodes[0] pour utiliser le firstChild à la place ?
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/nodevalue-b0zm85?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - parentNode, nextSibling, previousSibling
+            </div>
+            <div class="content">
+              <p>La propriété <b>parentNode</b> renvoie le nœud parent d'un élément ou d'un nœud.
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">element.parentNode</pre></div>
+              <br>
+              <p>La propriété <b>nextSibling</b> renvoie le nœud suivant au même niveau de l'arbre.</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">node.nextSibling</pre></div>
+              <br>
+              <p>La propriété <b>previousSibling</b> renvoie le nœud précédent au même niveau de l'arbre.</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">node.previousSibling</pre></div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - parentElement, firstChildElement, lastChildElement ... 
+            </div>
+            <div class="content">
+              <p>Pour toutes ces méthodes de nœuds, il existe des équivalents en éléments. Cela nous aide à parcourir le DOM sur la base des nœuds d'éléments. 
+                Il ignore les nœuds de texte et d'attribut. C'est plutôt sympa.
+              </p>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+          <div class="heading">
+            HTML DOM - textContent
+          </div>
+          <div class="content">
+            <p>Vous vous souvenez d'un exercice précédent où nous devions récupérer le nœud de texte et y modifier le texte. Eh bien, nous avons textContent pour le faire à notre place.
+            </p>
+            <div class="iFrame-container" data-link="https://codesandbox.io/embed/textcontent-som30d?fontsize=14&hidenavigation=1&theme=dark">
+              <iframe src="https://codesandbox.io/embed/textcontent-som30d?fontsize=14&hidenavigation=1&theme=dark"
+                style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+                title="textContent"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - document.write
+            </div>
+            <div class="content">
+              <p><span style="color:red">Ne pas utiliser.</span> Je le montre juste pour qu'on voit pourquoi ce n'est pas bon.</p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/vigorous-shamir-v7xu9n?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - innerHtml
+            </div>
+            <div class="content">
+              <p>La propriété innerHTML définit ou renvoie le contenu HTML (HTML interne) d'un élément.
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/innerhtml-e1vsde?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - innerHtml
+            </div>
+            <div class="content">
+              <p>Comme un petit rappel. Voici la structure DOM de quelques balises HTML.
+              </p>
+              <div class="flex-container">
+                <div>
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">id=</span><span style="background-color: #fff0f0">&quot;exemple&quot;</span><span style="color: #007700">&gt;</span>
+                          <span style="color: #007700">&lt;p&gt;</span>Voici <span style="color: #007700">&lt;em&gt;</span>mon<span style="color: #007700">&lt;/em&gt;</span> contenu<span style="color: #007700">&lt;/p&gt;</span>
+                      <span style="color: #007700">&lt;/div&gt;</span></pre>
+                  </div>
+                </div>
+                <div>
+                  <img src="image/innerhtml.svg" style="width: 80%;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - innerHtml
+            </div>
+            <div class="content">
+              <p>Lorsque nous appelons innerHTML, c'est ainsi qu'il voit le balisage à l'intérieur de notre div :
+              </p>
+              <br>
+              <div>
+                <img src="image/innerHtml2.svg" style="width: 30%;">
+              </div>
+              <br>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #007700">&lt;p&gt;</span>Voici <span style="color: #007700">&lt;em&gt;</span>mon<span style="color: #007700">&lt;/em&gt;</span> contenu<span style="color: #007700">&lt;/p&gt;</span></pre>
+              </div>
+              <p>Cool si vous avez un morceau de HTML que vous souhaitez insérer directement dans une page web. Si vous pouvez l'éviter, faites-le.</p>
+              <ol>
+                <li>innerHTML est lent</li>
+                <li>Event handlers attachés à tout élément du DOM sont préservés</li>
+                <li>Casse le document - pas de validation</li>
+                <li>Utilisé pour le Cross-site Scripting</li>
+              </ol>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - createElement
+            </div>
+            <div class="content">
+              <p>Nous pouvons manipuler les nœuds existants dans le Document Object Model.
+              </p>
+              <p>Nous allons maintenant aller un peu plus loin et créer de nouveaux nœuds dans l'arbre DOM.</p>
+              <br>
+              <div class="flex-container">
+                <div style="width: 30%">
+                  <img src="image/baby.svg" style="width: 70%;">
+                </div>
+                <div style="width:65%">
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007020">document</span>.createElement(<span style="background-color: #fff0f0">&quot;p&quot;</span>);</pre></div>
+                  <br>
+                  <p>seule, cette méthode n'est pas très utile. Vous aurez plus tard besoin de l'insérer dans le DOM, nous devons donc enregistrer le nœud dans une variable.</p>
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">let</span> paragraph <span style="color: #333333">=</span> <span style="color: #007020">document</span>.createElement(<span style="background-color: #fff0f0">&quot;p&quot;</span>);</pre></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - appendChild
+            </div>
+            <div class="content">
+              <p>La façon la plus simple d'insérer un nœud nouvellement créé dans l'arborescence d'un document est d'en faire un enfant d'un nœud existant dans ce document.
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/appendchild-q82hk3?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - createTextNode
+            </div>
+            <div class="content">
+              <p>Nous avons vu comment créer et ajouter un nouvel élément au DOM. Nous allons maintenant le remplir de texte.
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/createtextnode-xxpsdt?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - exercice
+            </div>
+            <div class="content">
+              <p>Je veux que vous affichiez le texte de prompt dans un nouvel élément de paragraphe qui est ajouté au div container .
+              </p>
+              <ol>
+                <li>Le listener evenet est déjà attaché au bouton</li>
+                <li>Lorsqu'il est cliqué, il appelle le callback post()</li>
+                <li>post() appelle prompt  qui demande à l'utilisateur de saisir du texte.</li>
+                <li><b>Ce texte doit être affiché comme un paragraphe dans le container div</b></li>
+              </ol>
+              <img src="image/blog-example.gif" style="height:70%">
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - exercice
+            </div>
+            <div class="content">
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/affectionate-ptolemy-97lssu?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - insertBefore
+            </div>
+            <div class="content">
+              <p>Vous pouvez utiliser insertBefore pour insérer un nouvel élément avant un élément existant. 
+              </p>
+              <p>Vous devez préciser trois choses:</p>
+              <ol>
+                <li>le nouvel élément que vous voulez insérer</li>
+                <li>l'élément cible avant lequel vous voulez l'insérer</li>
+                <li>le parent des deux éléments</li>
+              </ol>
+              <br>
+              <p>Voici la syntaxe</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">parentElement.insertBefore(newElement,targetElement);</pre></div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - insertBefore
+            </div>
+            <div class="content">
+              <p>Exemple d'utilisation de insertBefore avec une liste simple
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/insertbefore-54r4xs?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - insertAfter ???
+            </div>
+            <div class="content">
+              <p>Je ne sais pas pourquoi il n'y a pas de méthode insertAfter. Il me semble qu'elle serait très utile. Heureusement, nous pouvons l'écrire nous-mêmes.
+              </p>
+              <p>Pour ce faire, nous devons écrire une fonction appelée insertAfter qui prend comme insert before l'élément à insérer et l'élément cible.</p>
+              <p>Nous avons également besoin de deux nouvelles propriétés que je n'ai pas encore montrées.</p>
+              <br>
+              <p><b>parentNode</b> me donne le noeud parent de ce noeud s'il existe.</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">node.parentNode</pre></div>
+              <br>
+              <p><b>nextSibling</b> renvoie le nœud suivant au même niveau de l'arbre.</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">node.nextSibling</pre></div>
+
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - insertAfter ???
+            </div>
+            <div class="content">
+              <p>Pouvez-vous compléter la fonction insertAfter ?
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/exciting-panka-m8rt4i?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+    
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - Ce qu'il faut éviter
+            </div>
+            <div class="content">
+              <p><b>Ce n'est pas parce que vous pouvez ajouter du contenu important à une page web que vous devez le faire.</b>
+              </p>
+              <br>
+              <ol>
+                <li>Les visiteurs dont le JS est désactivé ne verront pas votre contenu</li>
+                <li>Les robots d'indexation ont du mal à comprendre votre site</li>
+                <li>Le HTML est plus difficile à maintenir</li>
+              </ol>
+              <br>
+              <div class="flex-container">
+                <div>
+                  <p>Si vous souhaitez afficher du contenu de manière dynamique, vous devez d'abord envisager les CSS. 
+                    Si cela n'est pas une solution à votre problème, vous pouvez commencer à penser à l'injection d'éléments avec Javascript.
+                  </p>
+                </div>
+                <div>
+                  <img src="image/css-3-logo.svg" style="width:50%">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - Trois feuilles du web
+            </div>
+            <div class="content">
+              <p>Le contenu du web peut être enveloppé dans trois couches lisibles par le navigateur web.
+              </p>
+              <br>
+              <div class="flex-container" style="justify-content: left;">
+                <div style="width:25%">
+                  <p><b>Structure</b>
+                  </p>
+                </div>
+                <div>
+                  <img src="image/html-5-logo.svg" style="width:25%">
+                </div>
+              </div>
+              <div class="flex-container" style="justify-content: left;">
+                <div style="width:25%">
+                  <p><b>Présentation</b>
+                  </p>
+                </div>
+                <div>
+                  <img src="image/css-3-logo.svg" style="width:25%">
+                </div>
+              </div>
+              <div class="flex-container" style="justify-content: left;">
+                <div style="width:25%">
+                  <p><b>Comportement</b>
+                  </p>
+                </div>
+                <div>
+                  <img src="image/js_logo.svg" style="width:20%">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - style property
+            </div>
+            <div class="content">
+              <p>Chaque nœud d'élément possède la propriété style. Elle contient des informations sur les styles css attachés à l'élément.
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">element.style.property</pre></div>
+              <br>
+              <p><b>Vous ne pouvez pas définir un style comme il est écrit dans les CSS:</b></p>
+              <div style="background: #e78484; overflow:auto;width:auto;border:solid rgb(63, 12, 12);border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">element.style <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;color:red&quot;</span>;</pre></div>
+              <br>
+              <p><b>Vous devez utiliser une propriété CSS comme ceci</b></p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">element.style.backgroundColor <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;red&quot;</span>;</pre></div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - style property
+            </div>
+            <div class="content">
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/style-property-pxmtln?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:85%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - style property
+            </div>
+            <div class="content">
+              <p>Lorsque nous utilisons la propriété style, nous ne pouvons accéder qu'au style défini par le javascript ou le style HTML en ligne.</p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/style-property-with-css-vq1im8?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:85%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - <a href="https://developer.mozilla.org/fr/docs/Web/API/Window/getComputedStyle">window.getComputedStyle()</a>
+            </div>
+            <div class="content">
+              <p>La méthode donne la valeur calculée finale de toutes les propriétés CSS sur un élément.</p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/window-getcomputedstyle-gybzyg?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:85%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - Dynamic styling
+            </div>
+            <div class="content">
+              <p>Il y a un sélecteur de couleur et un écouteur qui est appelé lorsque la couleur change. 
+                Pouvez-vous mettre à jour la couleur de fond du corps avec la couleur choisie ?</p>
+                <div class="iFrame-container" data-link="https://codesandbox.io/embed/silent-cookies-5r0n2l?fontsize=14&hidenavigation=1&theme=dark">
+                  <iframe src="/image/html-5-logo.svg"
+                  style="width:100%; height:85%; border:0; border-radius: 4px; overflow:hidden;"
+                  title="eloquent-lederberg-nopz22"
+                  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+                ></iframe>
+                </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - quand utiliser le style DOM
+            </div>
+            <div class="content">
+              <p style="color:red">Ce n'est pas parce que vous pouvez définir les css en javascript/inline que vous devez le faire.</p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/dynamic-styling-tuoxic?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:85%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - Dynamic styling
+            </div>
+            <div class="content">
+              <p style="color:red">Une approche plus moderne. Pas d'inquiétude si ce n'est pas immédiatement clair</p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/advanced-dynamic-style-fcm1os?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:85%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - Dynamic styling
+            </div>
+            <div class="content">
+              <p>Pour une chose aussi simple, nous n'avons même pas besoin de javascript! </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/checkbox-dynamic-styling-ip7rhb?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - Dynamic styling - className
+            </div>
+            <div class="content">
+              <p>className peut être utilisé pour mettre à jour l'attribut class attaché à un élément. De cette façon, CSS et Javascript sont mieux séparés.</p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/classname-mgxx3e?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - Dynamic styling - className
+            </div>
+            <div class="content">
+              <p>Il n'y a qu'un seul inconvénient à cette technique. 
+                Si vous attribuez une classe à l'aide de la propriété className, <span style="color:red">vous écraserez toutes les classes qui sont déjà attachées</span> à cet élément.
+              </p>
+              <p>Nous pourrions contourner ce problème en utilisant une assignation comme celle-ci (si nous voulons garder les autres classes css assignées) : </p>
+              <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">element.className <span style="color: #333333">+=</span> <span style="background-color: #fff0f0">&quot; intro&quot;</span></pre></div>
+              <br>
+              <p>mais avec cette affectation, notre code précédent ne fonctionnerait pas où nous assignons une classe qui montre l'élément et une autre qui le cache. 
+                Avec une affectation comme celle-ci, les deux classes resteraient affectées...
+              </p>
+              <br>
+              <p>Heureusement, nous avons un autre moyen de gérer les classes sur un élément de manière plus précise. On l'appelle <b>classList</b></p>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - Dynamic styling - classList
+            </div>
+            <div class="content">
+              <p>L'utilisation de classList est une alternative pratique pour accéder à la liste des classes d'un élément sous la forme d'une chaîne délimitée par des espaces via element.className. 
+              </p>
+              <div class="flex-container">
+                <div style="width:12%">
+                  <p><b>add()</b></p>
+                </div>
+                <div style="width:88%">
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      <span style="color: #008800; font-weight: bold">const</span> classes <span style="color: #333333">=</span> p.classList;
+                      classes.add(<span style="background-color: #fff0f0">&quot;classname-exemple&quot;</span>);</pre>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="flex-container">
+                <div style="width:12%">
+                  <p><b>remove()</b></p>
+                </div>
+                <div style="width:88%">
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      <span style="color: #008800; font-weight: bold">const</span> classes <span style="color: #333333">=</span> p.classList;
+                      classes.remove(<span style="background-color: #fff0f0">&quot;classname-exemple&quot;</span>);</pre>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="flex-container">
+                <div style="width:12%">
+                  <p><b>replace()</b></p>
+                </div>
+                <div style="width:88%">
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      <span style="color: #008800; font-weight: bold">const</span> classes <span style="color: #333333">=</span> p.classList;
+                      <span style="color: #008800; font-weight: bold">const</span> result <span style="color: #333333">=</span> classes.replace(<span style="background-color: #fff0f0">&quot;show-class&quot;</span>, <span style="background-color: #fff0f0">&quot;hide-class&quot;</span>);</pre>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="flex-container">
+                <div style="width:12%">
+                  <p><b>toggle()</b></p>
+                </div>
+                <div style="width:88%">
+                  <p>Je vais ignorer le toggle dans cette section. Je ne l'ai jamais utilisé et je ne vois pas comment je pourrais en avoir besoin. Voici la <a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/toggle">documentation</a>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - Dynamic styling - exercice
+            </div>
+            <div class="content">
+              <p>J'ai ajouté du style au paragraphe et je veux conserver ce style lorsque je clique sur le bouton tout en conservant la logique qui permet d'afficher et de cacher le paragraphe lors du clic. Pouvez-vous le faire fonctionner avec classList ?
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/classlist-exercice-j1vkos?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:85%; border:0; border-radius: 4px; overflow:hidden;"
+                title="eloquent-lederberg-nopz22"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML 5
+            </div>
+            <div class="content">
+              <p>HTML5 est la cinquième version du Hypertext Markup Language. Il est livré avec ses propres outils et jouets
+              </p>
+              <p style="color:red">Mais il s'agit d'un cours de web javascript... pourquoi s'intéresser à HTML 5 ?</p>
+              <p>Le HTML possède quelques caractéristiques intéressantes qui affectent également la façon dont nous écrivons du javascript. 
+                Certaines choses qui étaient écrites en javascript sont maintenant faites en HTML. 
+                Il existe également un élément canvas qui remplace le lecteur flash et qui nécessite beaucoup de javascript pour fonctionner.
+              </p>
+              <p>Je veux vous montrer comment l'ancien code était fait et comment le nouveau code devrait être fait.</p>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML 5 - form
+            </div>
+            <div class="content">
+              <p>L'élément de formulaire est arrivé avec HTML5. Avant cela, nous devions improviser un peu plus. Exemple:
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/old-form-55878x?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="https://codesandbox.io/embed/old-form-55878x?fontsize=14&hidenavigation=1&theme=dark"
+                  style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                  title="old Form"
+                  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML 5 - form
+            </div>
+            <div class="content">
+              <p>Remarquez que nous n'avons pas besoin de javascript en HTML5 pour valider les entrées. Cool
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/new-form-p5ufxk?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="https://codesandbox.io/embed/new-form-p5ufxk?fontsize=14&hidenavigation=1&theme=dark"
+                  style="width:100%; height:95%; border:0; border-radius: 4px; overflow:hidden;"
+                  title="new form"
+                  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML 5 - form
+            </div>
+            <div class="content">
+              <p>Parfois, nous n'avons même pas besoin d'utiliser l'attribut "patterns", car le HTML5 propose des types.
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/new-form-more-complete-gxh53d?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="https://codesandbox.io/embed/new-form-more-complete-gxh53d?fontsize=14&hidenavigation=1&theme=dark"
+                  style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                  title="new form more complete"
+                  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML 5 - headers
+            </div>
+            <div class="content">
+              <p>C'est du HTML valide mais il n'est pas clair que le paragraphe après h1 est un sous-titre et appartient au titre h1.
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/youthful-bassi-5lyj2n?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="https://codesandbox.io/embed/youthful-bassi-5lyj2n?fontsize=14&hidenavigation=1&theme=dark"
+                  style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                  title="youthful-bassi-5lyj2n"
+                  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML 5 - headers
+            </div>
+            <div class="content">
+              <p>le regroupement du h1 avec le sous-titre qui n'est pas vraiment une section est plus clair pour les robots d'indexation et les lecteurs d'écran
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/youthful-bassi-5lyj2n?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="https://codesandbox.io/embed/new-headers-5i5rv6?fontsize=14&hidenavigation=1&theme=dark"
+                  style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                  title="new headers"
+                  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML 5 - Navigation
+            </div>
+            <div class="content">
+              <p>La barre de navigation est l'un des éléments les plus importants de tout site web. Voici comment la barre de navigation a été marquée à l'origine.
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/old-navigation-xfdzvu?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="https://codesandbox.io/embed/old-navigation-xfdzvu?fontsize=14&hidenavigation=1&theme=dark"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="old navigation"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML 5 - Footers
+            </div>
+            <div class="content">
+              <p>le footer était à l'origine défini comme ceci
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">id=</span><span style="background-color: #fff0f0">&quot;footer&quot;</span><span style="color: #007700">&gt;</span>
+                    <span style="color: #007700">&lt;p&gt;</span><span style="color: #880000; font-weight: bold">&amp;#167;</span><span style="color: #007700">&lt;/p&gt;</span>
+                    <span style="color: #007700">&lt;p&gt;</span><span style="color: #880000; font-weight: bold">&amp;#169;</span> 2001<span style="color: #880000; font-weight: bold">&amp;#8211;</span>9 <span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;</span>Mark Pilgrim<span style="color: #007700">&lt;/a&gt;&lt;/p&gt;</span>
+                  <span style="color: #007700">&lt;/div&gt;</span></pre>
+              </div>
+              <br>
+              <p>Mais HTML5 fournit un élément
+                plus spécifique pour cela, l'élément &lt;footer&gt;.
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #007700">&lt;footer&gt;</span>
+                  <span style="color: #007700">&lt;p&gt;</span><span style="color: #880000; font-weight: bold">&amp;#167;</span><span style="color: #007700">&lt;/p&gt;</span>
+                  <span style="color: #007700">&lt;p&gt;</span><span style="color: #880000; font-weight: bold">&amp;#169;</span> 2001<span style="color: #880000; font-weight: bold">&amp;#8211;</span>9 <span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;</span>Mark Pilgrim<span style="color: #007700">&lt;/a&gt;&lt;/p&gt;</span>
+                  <span style="color: #007700">&lt;/footer&gt;</span></pre>
+              </div>
+            </div>
+          </div>
+
+          
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML 5 - La mise en place
+            </div>
+            <div class="content">
+              <p>Voyez le peu de javascript dont nous avons besoin pour faire quelque chose de beau parfois !
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/sexy-site-or-something-5muryf?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="https://codesandbox.io/embed/sexy-site-or-something-5muryf?fontsize=14&hidenavigation=1&theme=dark"
+                  style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                  title="sexy site or something"
+                  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Web javascript - exercice
+            </div>
+            <div class="content">
+              <p>J'ai déjà commencé à écrire un chronomètre virtuel. Cependant, les fonctions d'arrêt et de remise à zéro ne sont pas encore écrites. Pouvez-vous le faire ?
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/stopwatch-exercice-rggh4y?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="https://codesandbox.io/embed/stopwatch-exercice-rggh4y?fontsize=14&hidenavigation=1&theme=dark"
+                  style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                  title="stopwatch exercice"
+                  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Web javascript - exercice todo
+            </div>
+            <div class="content">
+              <p>pouvez-vous m'écrire un site web de liste de choses à faire ?
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/todo-list-cn90rj?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="https://codesandbox.io/embed/todo-list-cn90rj?fontsize=14&hidenavigation=1&theme=dark"
+                  style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                  title="todo list"
+                  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+          <div class="heading">
+            Web javascript - pierre papier ciseaux
+          </div>
+          <div class="content">
+            <p>J'ai commencé à écrire un jeu de pierre-papier-ciseaux. Pouvez-vous le compléter ?
+            </p>
+            <div class="iFrame-container" data-link="https://codesandbox.io/embed/rock-paper-scissor-5jdkb6?fontsize=14&hidenavigation=1&theme=dark">
+              <iframe src="https://codesandbox.io/embed/rock-paper-scissor-5jdkb6?fontsize=14&hidenavigation=1&theme=dark"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="rock paper scissor"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas
+          </div>
+          <div class="content grid center">
+            <p class="sub-title">
+              HTML5 Canvas
+            </p> 
+            <p>est une bitmapped area qui peut être manipulée avec JavaScript. Il s'agit en quelque sorte d'un remplacement de flashplayer et de silverlight.
+            </p>
+            <img src="image/Adobe_Flash_Player_SVG.svg" class="html-css-logo" style="width:15%; height:auto; left:70%; top:25%">
+            <img src="image/Silverlight_Logotyp.jpg" class="html-css-logo" style="width:15%; height:auto; top:25%">
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas element
+          </div>
+          <div class="content">
+            <p>
+              Dans la section &lt;body&gt; de la page HTML, ajoutez une balise &lt;canvas&gt; en utilisant un code tel que le suivant;
+            </p> 
+            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+              <pre style="margin: 0; line-height: 125%">
+                <span style="color: #007700">&lt;canvas</span> <span style="color: #0000CC">id=</span><span style="background-color: #fff0f0">&quot;canvasOne&quot;</span> <span style="color: #0000CC">width=</span><span style="background-color: #fff0f0">&quot;500&quot;</span> <span style="color: #0000CC">height=</span><span style="background-color: #fff0f0">&quot;300&quot;</span><span style="color: #007700">&gt;</span>
+                Votre navigateur ne supporte pas le HTML5 Canvas.
+                <span style="color: #007700">&lt;/canvas&gt;</span></pre>
+            </div>
+            <br>
+            <p><b>id: </b>L'id est le nom que nous utiliserons pour r&eacute;f&eacute;rencer cette balise &lt;canvas&gt; dans notre code JavaScript.
+              canvasOne est le nom que nous utiliserons.
+            </p>
+            <p><b>width: </b>La largeur, en pixels, du canvas. La largeur sera de 500 pixels.</p>
+            <p><b>height: </b>La hauteur, en pixels, du canvas. La hauteur sera de 300 pixels.</p>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas - dessiner
+          </div>
+          <div class="content">
+            <p>
+              Nous devons obtenir une référence au contexte 2D afin de pouvoir le manipuler. 
+              HTML5 Canvas est conçu pour fonctionner avec plusieurs contextes, y compris un contexte 3D proposé.
+            </p> 
+            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+              <pre style="margin: 0; line-height: 125%">
+                <span style="color: #008800; font-weight: bold">var</span> theCanvas <span style="color: #333333">=</span> <span style="color: #007020">document</span>.getElementById(<span style="background-color: #fff0f0">&quot;canvasOne&quot;</span>);
+                <span style="color: #008800; font-weight: bold">var</span> context <span style="color: #333333">=</span> theCanvas.getContext(<span style="background-color: #fff0f0">&quot;2d&quot;</span>);</pre>
+            </div>
+            <br>
+            <p>Avec le contexte, nous pouvons enfin créer quelque chose. Dans le code suivant, il s'agit d'un rectangle jaune.</p>
+            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+              <pre style="margin: 0; line-height: 125%">
+              context.fillStyle <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;#ffffaa&quot;</span>;
+              context.fillRect(<span style="color: #0000DD; font-weight: bold">0</span>, <span style="color: #0000DD; font-weight: bold">0</span>, <span style="color: #0000DD; font-weight: bold">500</span>, <span style="color: #0000DD; font-weight: bold">300</span>);</pre>
+            </div>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas - Hello world
+          </div>
+          <div class="content">
+            <p>Mettons les diapositives précédentes en action.</p>
+            <div class="iFrame-container" data-link="https://codesandbox.io/embed/canvas-hello-2elfgk?fontsize=14&hidenavigation=1&theme=dark">
+              <iframe src="https://codesandbox.io/embed/canvas-hello-2elfgk?fontsize=14&hidenavigation=1&theme=dark"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="canvas-hello "
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas - Forme rectangulaire
+          </div>
+          <div class="content">
+            <p>Sur Canvas, les formes rectangulaires de base peuvent être dessinées de trois manières différentes : filling, stroking, ou clearing</p>
+            <br>
+            <p>Dessine un rectangle rempli à la position x,y pour la largeur et la hauteur.</p>
+            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">fillRect(x,y,width,height)</pre></div>
+            <br>
+            <p>Dessine un contour rectangulaire à la position x,y pour la largeur et la hauteur.</p>
+            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">strokeRect(x,y,width,height)</pre></div>
+            <br>
+            <p>Efface la zone spécifiée et la rend totalement transparente à partir de la position x,y pour la largeur et la hauteur.</p>
+            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">clearRect(x,y,width,height)</pre></div>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas - Forme rectangulaire
+          </div>
+          <div class="content">
+            <div class="iFrame-container" data-link="https://codesandbox.io/embed/canvas-rectangle-o4ut57?fontsize=14&hidenavigation=1&theme=dark">
+              <iframe src="https://codesandbox.io/embed/canvas-rectangle-o4ut57?fontsize=14&hidenavigation=1&theme=dark"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="canvas rectangle"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas - exercice jeu d'échecs
+          </div>
+          <div class="content">
+            <p>Je veux dessiner un échiquier mais je n'ai pas pu finir. Pouvez-vous faire l'échiquier pour moi ?</p>
+            <div class="iFrame-container" data-link="https://codesandbox.io/embed/canvas-chessboard-exercice-bdw9bq?fontsize=14&hidenavigation=1&theme=dark">
+              <iframe src="https://codesandbox.io/embed/canvas-chessboard-exercice-bdw9bq?fontsize=14&hidenavigation=1&theme=dark"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="canvas - chessboard -exercice"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas - Paths
+          </div>
+          <div class="content">
+            <p>Les "Paths" sont une méthode que nous pouvons utiliser pour dessiner n'importe quelle forme sur le canvas. 
+              Un Path est simplement une liste de points, et de lignes à dessiner entre ces points. </p>
+            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+              <pre style="margin: 0; line-height: 125%">
+                context.strokeStyle <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;black&quot;</span>;
+                context.lineWidth <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">10</span>;
+                context.lineCap <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&#39;square&#39;</span>;
+                context.beginPath();
+                context.moveTo(<span style="color: #0000DD; font-weight: bold">20</span>, <span style="color: #0000DD; font-weight: bold">0</span>);
+                context.lineTo(<span style="color: #0000DD; font-weight: bold">100</span>, <span style="color: #0000DD; font-weight: bold">0</span>);
+                context.stroke();
+                context.closePath();</pre>
+            </div>
+            <br>
+            <p>Voici le résultat de ce code:</p>
+            <iframe id="path" src="canvas-path.html" width="100%" height="20%"  frameborder="0" style="right: 0%; bottom:0%; position:absolute"></iframe>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas - Paths
+          </div>
+          <div class="content">
+            <p><b>lineCap attributes:</b></p>
+            <p>Le cap de la ligne est la fin d'une ligne tracée sur le contexte. Elle peut avoir l'une des trois valeurs</p>
+            <br>
+            <p><b>butt</b> un bord plat qui est perpendiculaire au bord de la ligne</p>
+            <p><b>round</b> Un demi-cercle qui aura un diamètre égal à la longueur du bord de la ligne.</p>
+            <p><b>square</b> Un rectangle dont la longueur est égale à la largeur de la ligne et la hauteur à la moitié de la largeur de la ligne, placé à plat et perpendiculairement au bord de la ligne.</p>
+            <iframe id="pathedge" src="canvas-path-edge.html" width="100%" height="40%"  frameborder="0"></iframe>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas - Paths
+          </div>
+          <div class="content">
+            <p><b>lineJoin attributes:</b></p>
+            <p>Le lineJoin est le "coin" qui est créé lorsque deux lignes se rencontrent.</p>
+            <br>
+            <p><b>round</b> Un bord arrondi est dessiné à la jointure</p>
+            <p><b>bevel</b> Un bord diagonal est dessiné à la jointure</p>
+            <p><b>miter</b> un bord est dessiné à la jointure</p>
+            <iframe id="pathjoin" src="canvas-path-join.html" width="100%" height="40%"  frameborder="0"></iframe>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas - dessiner un triangle
+          </div>
+          <div class="content">
+            <p>dessiner un triangle en utilisant le path</p>
+            <div class="iFrame-container" data-link="https://codesandbox.io/embed/canvas-triangle-exercie-0dkjzx?fontsize=14&hidenavigation=1&theme=dark">
+              <iframe src="https://codesandbox.io/embed/canvas-triangle-exercie-0dkjzx?fontsize=14&hidenavigation=1&theme=dark"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="canvas triangle exercie"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas - Advanced Path Methods - Arcs
+          </div>
+          <div class="content">
+            <div class="flex-container">
+              <div style="width:70%">
+                <p>La méthode arc() de l'API Canvas 2D ajoute un arc de cercle au sous-chemin actuel.</p>
+                <p><b>x</b> La coordonnée horizontale du centre de l'arc.</p>
+                <p><b>y</b> La coordonnée verticale du centre de l'arc.</p>
+                <p><b>radius</b> Le rayon de l'arc. Doit être positif.</p>
+                <p><b>startAngle</b> L'angle auquel l'arc commence en radians, mesuré à partir de l'axe x positif.</p>
+                <p><b>endAngle</b> L'angle auquel l'arc se termine en radians, mesuré à partir de l'axe des x positif.</p>
+                <p><b>counterclockwise (Optional)</b> Une valeur booléenne facultative. Si elle est vraie, l'arc est dessiné dans le sens inverse des aiguilles d'une montre entre les angles de départ et d'arrivée.</p>
+              </div>
+              <div style="width:30%">
+                <img src="image/Circle_radians.gif">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas - dessiner un smiley
+          </div>
+          <div class="content">
+            <p>J'ai commencé à dessiner un smiley sur le canvas. Peux-tu ajouter le deuxième œil et une bouche ?</p>
+            <div class="iFrame-container" data-link="https://codesandbox.io/embed/falling-wind-rcvejt?fontsize=14&hidenavigation=1&theme=dark">
+              <iframe src="https://codesandbox.io/embed/falling-wind-rcvejt?fontsize=14&hidenavigation=1&theme=dark"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="falling-wind-rcvejt"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas - Advanced Path Methods - Bezier Curves
+          </div>
+          <div class="content">
+            <p>Une courbe de Bézier est une courbe décrite mathématiquement utilisée en infographie et en animation. 
+              Dans les images vectorielles, elles sont utilisées pour modéliser des courbes lisses qui peuvent être mises à l'échelle indéfiniment.
+            </p>
+            <img src="image/bézier_2_big.gif" style="height:60%">
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas - Advanced Path Methods - Bezier Curves
+          </div>
+          <div class="content">
+            <p>La méthode quadraticCurveTo() de l'API Canvas 2D ajoute une courbe de Bézier quadratique au sous-trajet actuel.
+              Elle nécessite deux points : le premier est un point de contrôle et le second est le point d'arrivée. 
+              Le point de départ est le dernier point de la trajectoire actuelle, qui peut être modifié à l'aide de moveTo() avant de créer la courbe de Bézier quadratique. 
+            </p>
+            <p><b>cpx</b> La coordonnée de l'axe x du point de contrôle</p>
+            <p><b>cpy</b> La coordonnée de l'axe y du point de contrôle</p>
+            <p><b>x</b> La coordonnée sur l'axe des x du point final.</p>
+            <p><b>y</b> La coordonnée sur l'axe des y du point final.</p>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas - Advanced Path Methods - Bezier Curves
+          </div>
+          <div class="content">
+            <div class="iFrame-container" data-link="https://codesandbox.io/embed/vanvas-berier-quarat-nt9kz8?fontsize=14&hidenavigation=1&theme=dark">
+              <iframe src="https://codesandbox.io/embed/vanvas-berier-quarat-nt9kz8?fontsize=14&hidenavigation=1&theme=dark"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="vanvas berier quarat"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas - Advanced Path Methods - Bezier Curves
+          </div>
+          <div class="content">
+            <p>La méthode bezierCurveTo() de l'API Canvas 2D ajoute une courbe de Bézier cubique au sous-trajet actuel
+            </p>
+            <p><b>cp1x</b> La coordonnée de l'axe x du premier point de contrôle.</p>
+            <p><b>cp1y</b> La coordonnée de l'axe des y du premier point de contrôle.</p>
+            <p><b>cp2x</b> La coordonnée de l'axe x du deuxième point de contrôle.</p>
+            <p><b>cp2y</b> La coordonnée de l'axe des y du deuxième point de contrôle.</p>
+            <p><b>x</b> La coordonnée sur l'axe des x du point final.</p>
+            <p><b>y</b> La coordonnée sur l'axe des y du point final.</p>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas - Advanced Path Methods - Bezier Curves
+          </div>
+          <div class="content">
+            <div class="iFrame-container" data-link="https://codesandbox.io/embed/keen-grass-iikton?fontsize=14&hidenavigation=1&theme=dark">
+              <iframe src="https://codesandbox.io/embed/keen-grass-iikton?fontsize=14&hidenavigation=1&theme=dark"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="keen-grass-iikton"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas - Compositing 
+          </div>
+          <div class="content">
+            <p>La composition fait référence à la finesse avec laquelle nous pouvons contrôler la transparence et les effets de superposition des objets lorsque nous les dessinons sur le canvas. 
+              Il existe deux attributs que nous pouvons utiliser pour contrôler les opérations de composition du canevas : globalAlpha et globalCompositeOperation.
+            </p>
+            <br>
+            <p><b>globalAlpha: </b>La propriété Canvas globalAlpha a une valeur par défaut de 1,0 
+              (complètement opaque) et peut être définie entre 0,0 (complètement transparent) 
+              et 1,0. Cette propriété Canvas doit être définie avant qu'une forme ne soit dessinée sur le canevas.
+            </p>
+            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">context.globalAlpha <span style="color: #333333">=</span> <span style="color: #6600EE; font-weight: bold">0.5</span>;</pre></div>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas - Compositing
+          </div>
+          <div class="content">
+            <div class="iFrame-container" data-link="https://codesandbox.io/embed/canvas-globalalpha-40z057?fontsize=14&hidenavigation=1&theme=dark">
+              <iframe src="https://codesandbox.io/embed/canvas-globalalpha-40z057?fontsize=14&hidenavigation=1&theme=dark"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="canvas globalAlpha"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas - Compositing 
+          </div>
+          <div class="content">
+            <p>La propriété globalCompositeOperation de l'API Canvas 2D définit le type d'opération de composition à appliquer lors du dessin de nouvelles formes. 
+            </p>
+            <div class="iFrame-container" data-link="https://codesandbox.io/embed/distracted-dream-39muzh?fontsize=14&hidenavigation=1&theme=dark">
+              <iframe src="https://codesandbox.io/embed/distracted-dream-39muzh?fontsize=14&hidenavigation=1&theme=dark"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="distracted-dream-39muzh"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            Asynchronous JavaScript
+          </div>
+          <div class="content grid center">
+            <p class="sub-title">
+              Asynchronous JavaScript
+            </p> 
+            <p>
+              En informatique et en technique des réseaux, on entend par communication asynchrone un mode de communication dans lequel l'envoi et la réception de données sont décalés dans 
+              le temps et ne bloquent pas le processus, par exemple en attendant la réponse du destinataire (comme c'est le cas dans la communication synchrone). 
+            </p>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            Asynchronous JavaScript
+          </div>
+          <div class="content grid center">
+            <img src="image/synchron-async.svg" style="height:100%">
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            Asynchronous JavaScript
+          </div>
+          <div class="content">
+            <p>Nous ne faisons pas nécessairement tout en même temps, mais nous faisons certainement quelque chose, plutôt que de regarder dans le vide.</p>
+            <img src="image/async-reallife.svg" style="height:95%">
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            Asynchronous JavaScript - XMLHttpRequest 
+          </div>
+          <div class="content">
+            <div class="flex-container">
+              <div>
+                <p>Les objets <b>XMLHttpRequest</b> (XHR) permettent d'interagir avec des serveurs. 
+                  On peut récupérer des données à partir d'une URL sans avoir à rafraîchir complètement la page. 
+                  Cela permet à une page web d'être mise à jour sans perturber les actions de l'utilisateur.
+                </p>
+                <p>Initialement, <b>XMLHttpRequest</b> était utilisé pour la boîte de réception de <b>Gmail</b>. Le fonctionnement était le suivant : 
+                  toutes les <b>20</b> à <b>30</b> secondes, une nouvelle requête était envoyée pour savoir si vous aviez ou non du nouveau courrier.
+                </p>
+              </div>
+              <div>
+                <img src="image/gmail.svg" style="width:100%">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+          <div class="slide">
+            <div class="heading">
+              Objects
+            </div>
+          </div>
+        </section>
+
+        <section class="counter">
+          <input type="number" id="index" name="index" min="1" max="114" value="1" style="width:40%"> of 114
+        </section>
+
+        <section class="navigation">
+          <button id="full-screen" class="btn-screen show">
+            <span><b>⛶</b></span>
+          </button>
+
+          <button id="small-screen" class="btn-screen">
+            <span><b>✖</b></span>
+          </button>
+
+          <button id="left-btn" class="btn">
+            <span>❮</span>
+          </button>
+
+          <button id="right-btn" class="btn">
+            <span>❯</span>
+          </button>
+        </section>
+      </div>
+    </div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>

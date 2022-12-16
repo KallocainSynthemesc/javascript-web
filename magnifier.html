@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="css/magnifier.css">
+    <title>Magnifier</title>
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" width="35%" height="35%" viewBox="0 0 146 130">
+  
+ <path class="lbl-map browserLine" d="M143.167 11v114a2 2 0 0 1-2 2h-136a2 2 0 0 1-2-2v-114"/>
+  
+  <path class="white" d="M15.167 27h10a5 5 0 0 0 0-10h-10a5 5 0 1 0 0 10zm19-10h80v10h-80zm106-5v20h-134v-20h-2v110a4 4 0 0 0 4 4h130a4 4 0 0 0 4-4v-110zm-49 107h-81v-54h81zm0-57h-81v-24h81zm45 39h-42v-63h42z"/>
+  
+
+  
+<path class="lbl-map gray" d="M10.167 65h81v54h-81zm84 36h42v-63h-42zm-84-39h81v-24h-81zm132-50v20h-138v-20zm-112 10a5 5 0 0 0-5-5h-10a5 5 0 1 0 0 10h10a5 5 0 0 0 5-5zm84-5h-80v10h80z"/>
+  
+    <path class="lbl-map grayD" d="M142.167 0h-138a3.913 3.913 0 0 0-4 3.82v8.18h146v-8.18a3.913 3.913 0 0 0-4-3.82zm-15.588 7.746a1.953 1.953 0 0 1-2-1.9 2 2 0 0 1 4 0 1.953 1.953 0 0 1-2 1.9zm6 0a1.953 1.953 0 0 1-2-1.9 2 2 0 0 1 4 0 1.953 1.953 0 0 1-2 1.9zm6 0a1.953 1.953 0 0 1-2-1.9 2 2 0 0 1 4 0 1.953 1.953 0 0 1-2 1.9zm-113.412 9.254h-10a5 5 0 1 0 0 10h10a5 5 0 0 0 0-10z" />
+  //// фон ///
+       <g class="lbl-map-magnifier">
+           <path class="lbl-map white" d="M32.728 38.981l4.242-4.242 33.936 33.936-4.242 4.242z"/>
+           <rect class="lbl-map white" x="67.397" y="64.158" width="12.342" height="22.82" rx="2" ry="2" transform="translate(-31.887 74.154) rotate(-45)"/>
+           <circle class="lbl-map white" cx="39" cy="41" r="30"/>
+        </g>
+  ////лупа////
+        <g style="clip-path:url(#lbl-map-mask)">
+<path class="lbl-map outline" d="M3 19h20v32h-20zM32 19h20v32h-20zM61 19h20v32h-20z"/>
+          <path class="lbl-map grayD" d="M91 34h32v28h-32z"/>
+          <path class="lbl-map outline" d="M93 19h51v9h-51zM59 59h24M30 59h24M1 59h24M91 68h54M91 76h54M91 84h54M91 92h54M127 36h18M127 44h18M127 52h18M127 60h18M1 72h82M1 80h82M1 88h66M1 100h52M1 108h82M1 116h82M1 124h66"/>
+        </g> 
+  ////внутренности маски///
+        <defs><clipPath id="lbl-map-mask"><circle cx="39" cy="41" r="25" style="fill:none"/></clipPath></defs>
+  ///маска///
+   </svg>
+</body>
+
+</html>

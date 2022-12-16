@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="133.66527mm"
+   height="98.746956mm"
+   viewBox="0 0 133.66527 98.746956"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="attributeNodeDia.svg">
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect879"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect875"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.68149425"
+     inkscape:cx="118.92001"
+     inkscape:cy="140.85906"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-13.706767,-32.834229)">
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect833"
+       width="24.805119"
+       height="22.058582"
+       x="58.699085"
+       y="41.567078" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.264583"
+       x="67.533676"
+       y="54.630905"
+       id="text837"><tspan
+         sodipodi:role="line"
+         id="tspan835"
+         x="67.533676"
+         y="54.630905"
+         style="stroke-width:0.264583">P</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.264583"
+       x="51.06205"
+       y="37.884743"
+       id="text841"><tspan
+         sodipodi:role="line"
+         id="tspan839"
+         x="51.06205"
+         y="37.884743"
+         style="stroke-width:0.264583">element node</tspan></text>
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:1.13546;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path843"
+       cx="38.159275"
+       cy="99.104301"
+       r="22.443495" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.264583"
+       x="23.883862"
+       y="87.848686"
+       id="text847"><tspan
+         sodipodi:role="line"
+         id="tspan845"
+         x="23.883862"
+         y="87.848686"
+         style="stroke-width:0.264583">title = &quot;le </tspan><tspan
+         sodipodi:role="line"
+         x="23.883862"
+         y="96.668137"
+         style="stroke-width:0.264583"
+         id="tspan849">titre est un </tspan><tspan
+         sodipodi:role="line"
+         x="23.883862"
+         y="105.48759"
+         style="stroke-width:0.264583"
+         id="tspan851">attribut </tspan><tspan
+         sodipodi:role="line"
+         x="23.883862"
+         y="114.30704"
+         style="stroke-width:0.264583"
+         id="tspan853">node</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.264583"
+       x="13.45183"
+       y="131.4985"
+       id="text857"><tspan
+         sodipodi:role="line"
+         id="tspan855"
+         x="13.45183"
+         y="131.4985"
+         style="stroke-width:0.264583">attribute node</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect859"
+       width="54.90543"
+       height="40.080963"
+       x="91.966599"
+       y="79.612869" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.264583"
+       x="101.57504"
+       y="92.790184"
+       id="text863"><tspan
+         sodipodi:role="line"
+         id="tspan861"
+         x="101.57504"
+         y="92.790184"
+         style="stroke-width:0.264583">Ceci est un </tspan><tspan
+         sodipodi:role="line"
+         x="101.57504"
+         y="101.60963"
+         style="stroke-width:0.264583"
+         id="tspan865">exemple de </tspan><tspan
+         sodipodi:role="line"
+         x="101.57504"
+         y="110.42908"
+         style="stroke-width:0.264583"
+         id="tspan867">texte</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.264583"
+       x="106.51653"
+       y="131.4985"
+       id="text871"><tspan
+         sodipodi:role="line"
+         id="tspan869"
+         x="106.51653"
+         y="131.4985"
+         style="stroke-width:0.264583">text node</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 58.699084,63.62566 c 0,0 -15.598325,12.967412 -15.598325,12.967412"
+       id="path873"
+       inkscape:path-effect="#path-effect875"
+       inkscape:original-d="M 58.699084,63.62566 43.100759,76.593072" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 83.504203,63.62566 c 0,0 22.188747,15.712684 22.188747,15.712684"
+       id="path877"
+       inkscape:path-effect="#path-effect879"
+       inkscape:original-d="M 83.504203,63.62566 105.69295,79.338344" />
+  </g>
+</svg>

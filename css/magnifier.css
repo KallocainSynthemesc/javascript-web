@@ -1,0 +1,58 @@
+.lbl-map {
+
+  stroke-miterlimit: 10;
+}
+.lbl-map.outline, .lbl-map.white, .lbl-map.slim, .lbl-map.browserLine{
+  stroke: #cbd1d3;
+}
+
+.lbl-map.outline, .lbl-map.browserLine  {
+  fill: none;
+}
+
+.lbl-map.outline, .lbl-map.white {
+  stroke-width: 4;
+}
+
+.lbl-map.browserLine {
+  stroke-width: 6;
+}
+
+.white {
+  fill: #fff;
+}
+
+.lbl-map.white {
+  fill: #fff;
+}
+
+.lbl-map.gray {
+  fill: #cbd1d3;
+  opacity: 0.5;
+}
+
+.lbl-map.grayD {
+  fill: #cbd1d3;
+}
+
+.lbl-map.slim {
+  fill: none;
+  stroke-width: 2px;
+}
+#lbl-map-mask, .lbl-map-magnifier {
+  animation: magnifier-move 5s ease-in-out forwards infinite;
+}
+@-webkit-keyframes magnifier-move {
+  0%, 7% {
+    transform: translate(0px, 20px);
+  }
+  34%, 41% {
+    transform: translate(50px, -8px);
+  }
+  68%, 75% {
+    transform: translate(36px, 32px);
+  }
+  100% {
+    transform: translate(0px, 20px);
+  }
+}
