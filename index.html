@@ -377,6 +377,105 @@
             </div>
           </div>
 
+                    <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - O comme Object - BOM
+            </div>
+            <div class="content">
+              <p>La propriété <b>window.history</b> renvoie une référence à l'objet History, qui fournit une interface permettant de manipuler l'historique des sessions du navigateur.
+              </p>  
+              <p><b>Examples:</b></p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  window.history.back();     <span style="color: #888888">// équivalent à un clic sur le bouton retour</span>
+                  window.history.go(<span style="color: #333333">-</span><span style="color: #0000DD; font-weight: bold">1</span>);     <span style="color: #888888">// équivalent à history.back() ;</span></pre>
+              </div>
+              <br>
+              <p>La propriété <b>window.navigator</b> renvoie une référence à l'objet Navigator, qui possède des méthodes et des propriétés sur l'application qui exécute le script. </p>
+              <p><b>Examples:</b></p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  window.navigator.cookieEnabled <span style="color: #008800; font-style: italic">//true ou false</span>
+                  window.navigator.platform <span style="color: #008800; font-style: italic">//WIN32,WIN64,Debian,Mac etc</span>
+                  window.navigator.userAgent <span style="color: #008800; font-style: italic">//Firefox, Chrome, Safari etc</span>
+                  window.navigator.language <span style="color: #008800; font-style: italic">//fr-FR, de-DE, en-US</span>
+                  window.navigator.onLine <span style="color: #008800; font-style: italic">//true ou false si le navigateur est en ligne</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - O comme Object - BOM
+            </div>
+            <div class="content">
+              <p>L'objet <b>window.screen</b> contient des informations sur l'écran de l'utilisateur.
+              </p>  
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  window.screen.width
+                  window.screen.height
+                  window.screen.availWidth
+                  window.screen.availHeight
+                  window.screen.colorDepth
+                  window.screen.pixelDepth</pre>
+              </div>
+              <br>
+              <p>L'objet <b>window.location</b> peut être utilisé pour obtenir l'adresse de la page actuelle (URL) et pour rediriger le navigateur vers une nouvelle page.</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                window.location.href <span style="color: #008800; font-style: italic">//renvoie le href (URL) de la page actuelle.</span>
+                window.location.hostname <span style="color: #008800; font-style: italic">//renvoie le nom de domaine de l&#39;hôte web.</span>
+                window.location.pathname <span style="color: #008800; font-style: italic">//renvoie le chemin et le nom de fichier de la page actuelle.</span>
+                window.location.protocol <span style="color: #008800; font-style: italic">//retourne le protocole web utilisé (http : ou https :)</span>
+                window.location.assign() <span style="color: #008800; font-style: italic">//charge un nouveau document.</span></pre>
+              </div>
+            </div>
+          </div>
+
+          
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - O comme Object - BOM
+            </div>
+            <div class="content">
+              <div class="flex-container">
+                <div>
+                  <p>clarification de la largeur et de la hauteur
+                  </p>
+                  <p>Les propriétés <b>outerHeight</b> et <b>outerWidth</b> vont retourner la hauteur 
+                    et la largeur de la fenêtre du navigateur en comptant les options du navigateur.
+                  </p>  
+                  <p>Les propriétés <b>innerHeight</b> et <b>innerWidth</b> vont retourner la hauteur et la largeur 
+                    de la partie visible de la fenêtre de navigation (la partie dans laquelle le code est rendu)</p>
+                </div>
+                <div style="width:56%">
+                  <img src="image/screensize.svg"  style="width:100%">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - O comme Object - BOM
+            </div>
+            <div class="content">
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/kind-kepler-mz5l2m?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                  style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                  title="kind-kepler-mz5l2m"
+                  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
           <!--slide 46-->
           <div class="slide">
             <div class="heading">
@@ -485,6 +584,8 @@
               <p><b>Text nodes:</b> le n&oelig;ud de l'&eacute;l&eacute;ment &lt;p&gt; peut contenir le texte &quot;Ceci est un exemple de texte&quot;. Le texte &agrave; l'int&eacute;rieur de &lt;p&gt; est appel&eacute; un n&oelig;ud de texte.</p>
               <p><b>Attribute nodes:</b> Les attributs sont utilisés pour donner des informations plus spécifiques sur un élément. L'attribut title par exemple.</p>
               <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; width:70%"><pre style="margin: 0; line-height: 125%"> <span style="color: #007700">&lt;p</span> <span style="color: #0000CC">title=</span><span style="background-color: #fff0f0">&quot;le titre est un attribut node&quot;</span><span style="color: #007700">&gt;</span>Ceci est un exemple de texte<span style="color: #007700">&lt;/p&gt;</span> </pre></div>
+              <br>
+              <p>une liste complète de tous les types de noeuds peut être trouvée <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType">ici</a></p>
               <img src="image/attributeNodeDia.svg" class="html-css-logo" style="height:33%; left: 67%; top: 62%;">
             </div>
           </div>
@@ -758,7 +859,7 @@
             <div class="content">
               <p>Message à moi-même : Cet exemple ne fonctionne pas dans la sandbox et doit être téléchargé et exécuté localement pour une raison quelconque. <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event">source</a></p>
               <div class="iFrame-container" data-link="https://codesandbox.io/embed/onload-load-ybfkkd?fontsize=14&hidenavigation=1&theme=dark">
-                <iframe src="https://codesandbox.io/embed/onload-load-ybfkkd?fontsize=14&hidenavigation=1&theme=dark"
+                <iframe src="/image/html-5-logo.svg"
                   style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
                   title="onload/load"
                   allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -1032,7 +1133,7 @@
             <p>Vous vous souvenez d'un exercice précédent où nous devions récupérer le nœud de texte et y modifier le texte. Eh bien, nous avons textContent pour le faire à notre place.
             </p>
             <div class="iFrame-container" data-link="https://codesandbox.io/embed/textcontent-som30d?fontsize=14&hidenavigation=1&theme=dark">
-              <iframe src="https://codesandbox.io/embed/textcontent-som30d?fontsize=14&hidenavigation=1&theme=dark"
+              <iframe src="/image/html-5-logo.svg"
                 style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
                 title="textContent"
                 allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -1287,6 +1388,7 @@
             </div>
           </div>
 
+          
           <!--slide 46-->
           <div class="slide">
             <div class="heading">
@@ -1301,11 +1403,158 @@
                 title="eloquent-lederberg-nopz22"
                 allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
                 sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-              ></iframe>
+                ></iframe>
               </div>
             </div>
           </div>
-    
+          
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - insertAdjacentElement
+            </div>
+            <div class="content">
+              <p>insertAdjacentElement fonctionne comme une combinaison de insertBefore et appendChild, mais permet de mieux contrôler 
+                l'endroit où le nouvel élément est inséré et est plus facile à gérer que la syntaxe tordue de insertBefore et appendChild
+              </p>
+              <p><b>Syntax:</b></p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">element.insertAdjacentElement(position, element)</pre></div>
+              <br>
+              <table>
+                <tbody><tr><th>Value</th><th>Description</th></tr>
+                <tr><td>afterbegin</td><td>Après le début de l'élément (premier enfant)</td></tr>
+                <tr><td>afterend</td><td>Après l'élément</td></tr>
+                <tr><td>beforebegin</td><td>Avant l'élément</td></tr>
+                <tr><td>beforeend</td><td>Avant la fin de l'élément (dernier enfant)</td></tr>
+              </tbody></table>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - insertAdjacentText
+            </div>
+            <div class="content">
+              <p>La méthode insertAdjacentText() insère un nœud texte à une position donnée par rapport à l’élément sur lequel il est appelé
+              </p>
+              <p><b>Syntax:</b></p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  element.insertAdjacentText(position, text)</pre>
+              </div>
+              <br>
+              <table>
+                <tbody><tr><th>Value</th><th>Description</th></tr>
+                <tr><td>afterbegin</td><td>Après le début de l'élément (premier enfant)</td></tr>
+                <tr><td>afterend</td><td>Après l'élément</td></tr>
+                <tr><td>beforebegin</td><td>Avant l'élément</td></tr>
+                <tr><td>beforeend</td><td>Avant la fin de l'élément (dernier enfant)</td></tr>
+              </tbody></table>
+            </div>
+          </div>
+          
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - insertAdjacentElement, insertAdjacentText
+            </div>
+            <div class="content">
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/inseradjacentelement-insertadjacenttext-mre3u6?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                  style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                  title="inserAdjacentElement"
+                  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - cloneNode
+            </div>
+            <div class="content">
+              <p>Pour cloner un nœud, on peut utiliser la méthode cloneNode() de Node qui renvoie une copie du nœud sur lequel elle a été appelée.
+              </p>
+              <p><b>Syntax:</b></p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">node.cloneNode(deep)</pre></div>
+              <br>
+              <table class="ws-table-all notranslate"> 
+                <tbody><tr></tr>
+                <tr>
+                 <td style="width:120px">Parameter</td>
+                 <td>Description</td>
+                </tr>
+                <tr>
+                <td><em>deep</em></td>
+                <td>Optional.<br><code class="w3-codespan">false</code> - Default. Clone uniquement le nœud et ses attributs.<br>
+                <code class="w3-codespan">true</code> - Clone le nœud, ses attributs et ses descendants.</td>
+                </tr>
+                </tbody></table>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - cloneNode
+            </div>
+            <div class="content">
+              <p>J'ai oublié d'acheter du lait le mardi, pouvez-vous cloner le list item (lait) sur la liste des courses du vendredi ? 
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/gallant-alex-tom50q?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                    style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                    title="gallant-alex-tom50q"
+                    allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+                  ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              HTML DOM - replaceChild
+            </div>
+            <div class="content">
+              <p>La méthode replaceChild() remplace un nœud enfant par un nouveau nœud.
+              </p>
+              <div class="iFrame-container" data-link="https://codesandbox.io/embed/quirky-sunset-0ct4oq?fontsize=14&hidenavigation=1&theme=dark">
+                <iframe src="/image/html-5-logo.svg"
+                    style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                    title="gallant-alex-tom50q"
+                    allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+                  ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+          <div class="heading">
+            HTML DOM - removeChild
+          </div>
+          <div class="content">
+            <p>Pour supprimer totalement un nœud du DOM, on peut déjà utiliser la méthode removeChild() de Node qui va supprimer un nœud enfant passé en argument d’un certain nœud parent de l’arborescence du DOM et retourner le nœud retiré.
+            </p>
+            <div class="iFrame-container" data-link="https://codesandbox.io/embed/removechild-1ze8ys?fontsize=14&hidenavigation=1&theme=dark">
+              <iframe src="/image/html-5-logo.svg"
+                  style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                  title="gallant-alex-tom50q"
+                  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+                ></iframe>
+            </div>
+          </div>
+        </div>
+
           <!--slide 46-->
           <div class="slide">
             <div class="heading">
@@ -1659,7 +1908,7 @@
               <p>L'élément de formulaire est arrivé avec HTML5. Avant cela, nous devions improviser un peu plus. Exemple:
               </p>
               <div class="iFrame-container" data-link="https://codesandbox.io/embed/old-form-55878x?fontsize=14&hidenavigation=1&theme=dark">
-                <iframe src="https://codesandbox.io/embed/old-form-55878x?fontsize=14&hidenavigation=1&theme=dark"
+                <iframe src="/image/html-5-logo.svg"
                   style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
                   title="old Form"
                   allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -1678,7 +1927,7 @@
               <p>Remarquez que nous n'avons pas besoin de javascript en HTML5 pour valider les entrées. Cool
               </p>
               <div class="iFrame-container" data-link="https://codesandbox.io/embed/new-form-p5ufxk?fontsize=14&hidenavigation=1&theme=dark">
-                <iframe src="https://codesandbox.io/embed/new-form-p5ufxk?fontsize=14&hidenavigation=1&theme=dark"
+                <iframe src="/image/html-5-logo.svg"
                   style="width:100%; height:95%; border:0; border-radius: 4px; overflow:hidden;"
                   title="new form"
                   allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -1697,7 +1946,7 @@
               <p>Parfois, nous n'avons même pas besoin d'utiliser l'attribut "patterns", car le HTML5 propose des types.
               </p>
               <div class="iFrame-container" data-link="https://codesandbox.io/embed/new-form-more-complete-gxh53d?fontsize=14&hidenavigation=1&theme=dark">
-                <iframe src="https://codesandbox.io/embed/new-form-more-complete-gxh53d?fontsize=14&hidenavigation=1&theme=dark"
+                <iframe src="/image/html-5-logo.svg"
                   style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
                   title="new form more complete"
                   allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -1716,7 +1965,7 @@
               <p>C'est du HTML valide mais il n'est pas clair que le paragraphe après h1 est un sous-titre et appartient au titre h1.
               </p>
               <div class="iFrame-container" data-link="https://codesandbox.io/embed/youthful-bassi-5lyj2n?fontsize=14&hidenavigation=1&theme=dark">
-                <iframe src="https://codesandbox.io/embed/youthful-bassi-5lyj2n?fontsize=14&hidenavigation=1&theme=dark"
+                <iframe src="/image/html-5-logo.svg"
                   style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
                   title="youthful-bassi-5lyj2n"
                   allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -1735,7 +1984,7 @@
               <p>le regroupement du h1 avec le sous-titre qui n'est pas vraiment une section est plus clair pour les robots d'indexation et les lecteurs d'écran
               </p>
               <div class="iFrame-container" data-link="https://codesandbox.io/embed/youthful-bassi-5lyj2n?fontsize=14&hidenavigation=1&theme=dark">
-                <iframe src="https://codesandbox.io/embed/new-headers-5i5rv6?fontsize=14&hidenavigation=1&theme=dark"
+                <iframe src="/image/html-5-logo.svg"
                   style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
                   title="new headers"
                   allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -1754,7 +2003,7 @@
               <p>La barre de navigation est l'un des éléments les plus importants de tout site web. Voici comment la barre de navigation a été marquée à l'origine.
               </p>
               <div class="iFrame-container" data-link="https://codesandbox.io/embed/old-navigation-xfdzvu?fontsize=14&hidenavigation=1&theme=dark">
-                <iframe src="https://codesandbox.io/embed/old-navigation-xfdzvu?fontsize=14&hidenavigation=1&theme=dark"
+                <iframe src="/image/html-5-logo.svg"
                 style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
                 title="old navigation"
                 allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -1803,7 +2052,7 @@
               <p>Voyez le peu de javascript dont nous avons besoin pour faire quelque chose de beau parfois !
               </p>
               <div class="iFrame-container" data-link="https://codesandbox.io/embed/sexy-site-or-something-5muryf?fontsize=14&hidenavigation=1&theme=dark">
-                <iframe src="https://codesandbox.io/embed/sexy-site-or-something-5muryf?fontsize=14&hidenavigation=1&theme=dark"
+                <iframe src="/image/html-5-logo.svg"
                   style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
                   title="sexy site or something"
                   allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -1822,7 +2071,7 @@
               <p>J'ai déjà commencé à écrire un chronomètre virtuel. Cependant, les fonctions d'arrêt et de remise à zéro ne sont pas encore écrites. Pouvez-vous le faire ?
               </p>
               <div class="iFrame-container" data-link="https://codesandbox.io/embed/stopwatch-exercice-rggh4y?fontsize=14&hidenavigation=1&theme=dark">
-                <iframe src="https://codesandbox.io/embed/stopwatch-exercice-rggh4y?fontsize=14&hidenavigation=1&theme=dark"
+                <iframe src="/image/html-5-logo.svg"
                   style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
                   title="stopwatch exercice"
                   allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -1841,7 +2090,7 @@
               <p>pouvez-vous m'écrire un site web de liste de choses à faire ?
               </p>
               <div class="iFrame-container" data-link="https://codesandbox.io/embed/todo-list-cn90rj?fontsize=14&hidenavigation=1&theme=dark">
-                <iframe src="https://codesandbox.io/embed/todo-list-cn90rj?fontsize=14&hidenavigation=1&theme=dark"
+                <iframe src="/image/html-5-logo.svg"
                   style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
                   title="todo list"
                   allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -1860,7 +2109,7 @@
             <p>J'ai commencé à écrire un jeu de pierre-papier-ciseaux. Pouvez-vous le compléter ?
             </p>
             <div class="iFrame-container" data-link="https://codesandbox.io/embed/rock-paper-scissor-5jdkb6?fontsize=14&hidenavigation=1&theme=dark">
-              <iframe src="https://codesandbox.io/embed/rock-paper-scissor-5jdkb6?fontsize=14&hidenavigation=1&theme=dark"
+              <iframe src="/image/html-5-logo.svg"
                 style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
                 title="rock paper scissor"
                 allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -1943,7 +2192,7 @@
           <div class="content">
             <p>Mettons les diapositives précédentes en action.</p>
             <div class="iFrame-container" data-link="https://codesandbox.io/embed/canvas-hello-2elfgk?fontsize=14&hidenavigation=1&theme=dark">
-              <iframe src="https://codesandbox.io/embed/canvas-hello-2elfgk?fontsize=14&hidenavigation=1&theme=dark"
+              <iframe src="/image/html-5-logo.svg"
                 style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
                 title="canvas-hello "
                 allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -1979,7 +2228,7 @@
           </div>
           <div class="content">
             <div class="iFrame-container" data-link="https://codesandbox.io/embed/canvas-rectangle-o4ut57?fontsize=14&hidenavigation=1&theme=dark">
-              <iframe src="https://codesandbox.io/embed/canvas-rectangle-o4ut57?fontsize=14&hidenavigation=1&theme=dark"
+              <iframe src="/image/html-5-logo.svg"
                 style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
                 title="canvas rectangle"
                 allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -1997,7 +2246,7 @@
           <div class="content">
             <p>Je veux dessiner un échiquier mais je n'ai pas pu finir. Pouvez-vous faire l'échiquier pour moi ?</p>
             <div class="iFrame-container" data-link="https://codesandbox.io/embed/canvas-chessboard-exercice-bdw9bq?fontsize=14&hidenavigation=1&theme=dark">
-              <iframe src="https://codesandbox.io/embed/canvas-chessboard-exercice-bdw9bq?fontsize=14&hidenavigation=1&theme=dark"
+              <iframe src="/image/html-5-logo.svg"
                 style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
                 title="canvas - chessboard -exercice"
                 allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -2072,7 +2321,7 @@
           <div class="content">
             <p>dessiner un triangle en utilisant le path</p>
             <div class="iFrame-container" data-link="https://codesandbox.io/embed/canvas-triangle-exercie-0dkjzx?fontsize=14&hidenavigation=1&theme=dark">
-              <iframe src="https://codesandbox.io/embed/canvas-triangle-exercie-0dkjzx?fontsize=14&hidenavigation=1&theme=dark"
+              <iframe src="/image/html-5-logo.svg"
                 style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
                 title="canvas triangle exercie"
                 allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -2112,8 +2361,26 @@
           </div>
           <div class="content">
             <p>J'ai commencé à dessiner un smiley sur le canvas. Peux-tu ajouter le deuxième œil et une bouche ?</p>
+            <div class="iFrame-container" data-link="https://codesandbox.io/embed/canvas-circle-g0poht?fontsize=14&hidenavigation=1&theme=dark">
+              <iframe src="/image/html-5-logo.svg"
+              style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+              title="canvas-circle"
+              allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+              sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+            ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas - dessiner un smiley
+          </div>
+          <div class="content">
+            <p>J'ai commencé à dessiner un smiley sur le canvas. Peux-tu ajouter le deuxième œil et une bouche ?</p>
             <div class="iFrame-container" data-link="https://codesandbox.io/embed/falling-wind-rcvejt?fontsize=14&hidenavigation=1&theme=dark">
-              <iframe src="https://codesandbox.io/embed/falling-wind-rcvejt?fontsize=14&hidenavigation=1&theme=dark"
+              <iframe src="/image/html-5-logo.svg"
                 style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
                 title="falling-wind-rcvejt"
                 allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -2160,7 +2427,7 @@
           </div>
           <div class="content">
             <div class="iFrame-container" data-link="https://codesandbox.io/embed/vanvas-berier-quarat-nt9kz8?fontsize=14&hidenavigation=1&theme=dark">
-              <iframe src="https://codesandbox.io/embed/vanvas-berier-quarat-nt9kz8?fontsize=14&hidenavigation=1&theme=dark"
+              <iframe src="/image/html-5-logo.svg"
                 style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
                 title="vanvas berier quarat"
                 allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -2194,7 +2461,7 @@
           </div>
           <div class="content">
             <div class="iFrame-container" data-link="https://codesandbox.io/embed/keen-grass-iikton?fontsize=14&hidenavigation=1&theme=dark">
-              <iframe src="https://codesandbox.io/embed/keen-grass-iikton?fontsize=14&hidenavigation=1&theme=dark"
+              <iframe src="/image/html-5-logo.svg"
                 style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
                 title="keen-grass-iikton"
                 allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -2229,7 +2496,7 @@
           </div>
           <div class="content">
             <div class="iFrame-container" data-link="https://codesandbox.io/embed/canvas-globalalpha-40z057?fontsize=14&hidenavigation=1&theme=dark">
-              <iframe src="https://codesandbox.io/embed/canvas-globalalpha-40z057?fontsize=14&hidenavigation=1&theme=dark"
+              <iframe src="/image/html-5-logo.svg"
                 style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
                 title="canvas globalAlpha"
                 allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -2248,9 +2515,83 @@
             <p>La propriété globalCompositeOperation de l'API Canvas 2D définit le type d'opération de composition à appliquer lors du dessin de nouvelles formes. 
             </p>
             <div class="iFrame-container" data-link="https://codesandbox.io/embed/distracted-dream-39muzh?fontsize=14&hidenavigation=1&theme=dark">
-              <iframe src="https://codesandbox.io/embed/distracted-dream-39muzh?fontsize=14&hidenavigation=1&theme=dark"
+              <iframe src="/image/html-5-logo.svg"
                 style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
                 title="distracted-dream-39muzh"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas - Rotation 
+          </div>
+          <div class="content">
+            <p>La méthode rotate() nous permet de faire pivoter les éléments 
+            </p>
+            <p><b>Syntax:</b></p>
+            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">rotate(angle)</pre></div>
+            <br>
+            <p><b>angle</b> L'angle de rotation, dans le sens des aiguilles d'une montre, en radians. Vous pouvez utiliser degree * Math.PI / 180 pour calculer un radian à partir d'un degré. </p>
+            <br>
+            <p><b style="color:red">Le point central de rotation est toujours l'origine du canvas. Pour modifier le point central, vous devez déplacer le canvas à l'aide de la méthode translate(). </b></p>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas - Rotation 
+          </div>
+          <div class="content">
+            <p>Exemple simple de rotation d'un rectangle
+            </p>
+            <div class="iFrame-container" data-link="https://codesandbox.io/embed/muddy-surf-0gz2i9?fontsize=14&hidenavigation=1&theme=dark">
+              <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="muddy-surf-0gz2i9"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas - Rotation 
+          </div>
+          <div class="content">
+            <p>rotation sur son propre axe
+            </p>
+            <div class="iFrame-container" data-link="https://codesandbox.io/embed/canvas-rotate-center-xgqmt7?fontsize=14&hidenavigation=1&theme=dark">
+              <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="canvas rotate center"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTML 5 - Canvas - Rotation 
+          </div>
+          <div class="content">
+            <p>Pouvez-vous fabriquer une horloge en toile qui affiche l'heure actuelle. Indice : 1 heure Angles en degrés = 15
+            </p>
+            <div class="iFrame-container" data-link="https://codesandbox.io/embed/canvas-clock-exercice-3d363n?fontsize=14&hidenavigation=1&theme=dark">
+              <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="canvas rotate center"
                 allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
                 sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
               ></iframe>
@@ -2298,6 +2639,134 @@
         <!--slide 46-->
         <div class="slide">
           <div class="heading">
+            Asynchronous JavaScript 
+          </div>
+          <div class="content">
+            <div class="iFrame-container" data-link="https://codesandbox.io/embed/async-requestanimationframe-w7g1w4?fontsize=14&hidenavigation=1&theme=dark">
+              <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="canvas rotate center"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            Asynchronous JavaScript - AJAX
+          </div>
+          <div class="content">
+            <p>AJAX signifie <b>Asynchronous JavaScript and XML</b>. L'AJAX n'est pas un langage de programmation mais correspond plutôt à 
+              un ensemble de techniques utilisant des technologies diverses pour envoyer et récupérer des données vers et depuis un serveur de façon asynchrone,
+              c'est-à-dire sans avoir à recharger la page
+            </p>
+
+            <p>“L'AJAX” ou plutôt “l'Ajax” est aujourd'hui un terme générique utilisé pour désigner toute technique côté client (côté navigateur) permettant d'envoyer et de récupérer des données depuis un serveur et 
+              de mettre à jour dynamiquement le DOM sans nécessiter l'actualisation complète de la page.</p>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTTP Protocol detour
+          </div>
+          <div class="content">
+            <p>Les serveurs Web parlent le protocole HTTP, c'est pourquoi ils sont souvent appelés
+              serveurs HTTP. Ces serveurs HTTP stockent les données de l'Internet et fournissent les données lorsqu'elles sont demandées par les clients HTTP. 
+            </p>
+            <img src="image/http.svg" style="height:60%">
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTTP Protocol detour - Media Types
+          </div>
+          <div class="content">
+            <p>Comme Internet héberge plusieurs milliers de types de données différents, HTTP marque soigneusement chaque objet
+              transporté sur le Web avec une étiquette de format de données appelée type MIME.
+            </p>
+            <div class="flex-container">
+              <div style="width:60%">
+              <p>• Un document texte au format HTML serait étiqueté avec le type text/html</p>
+              <p>• Un document de texte ASCII simple serait étiqueté avec le type text/plain</p>
+              <p>• Une version JPEG d'une image serait image/jpeg</p>
+              <p>• Une image au format GIF serait image/gif</p>
+              <p>• Un film Apple QuickTime serait video/quicktime.</p>
+              <p>• Une présentation Microsoft PowerPoint serait application/vnd.mspowerpoint</p>
+              </div>
+              <div>
+                <img src="image/httpMIME.svg" style="height:60%">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTTP Protocol detour - URLs
+          </div>
+          <div class="content">
+            <p>Les URL décrivent l'emplacement spécifique d'une ressource sur un serveur particulier. 
+              Elles vous indiquent exactement comment aller chercher une ressource à partir d'un emplacement précis et fixe.
+            </p>
+            <br>
+            <img src="image/URL.svg" style="width:95%">
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTTP Protocol detour - Methods
+          </div>
+          <div class="content">
+            <p>Le protocole HTTP prend en charge plusieurs commandes de requête différentes, appelées méthodes HTTP. 
+              Chaque requête HTTP possède une méthode. La méthode indique au serveur l'action à effectuer
+            </p>
+            <br>
+            <table>
+              <tbody><tr><th>HTTP method</th><th>Description</th></tr>
+              <tr><td>GET</td><td>Envoyer une ressource nommée du serveur au client</td></tr>
+              <tr><td>POST</td><td>Envoyer les données du client dans une application passerelle serveur</td></tr>
+              <tr><td>PUT</td><td>Stocker les données du client dans une ressource serveur nommée</td></tr>
+              <tr><td>DELETE</td><td>Supprime la ressource nommée d'un serveur.</td></tr>
+              <tr><td>HEAD</td><td>Envoyer uniquement les en-têtes HTTP de la réponse pour la ressource nommée.</td></tr>
+            </tbody></table>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            HTTP Protocol detour - Status Codes
+          </div>
+          <div class="content">
+            <p>Chaque message de réponse HTTP est accompagné d'un code d'état. Ce code d'état est un code 
+              numérique à trois chiffres qui indique au client si la demande a abouti ou si d'autres actions sont nécessaires.
+            </p>
+            <br>
+            <p>Liste abrégée des codes d'état courants</p>
+            <table>
+              <tbody><tr><th>HTTP status code </th><th>Description</th></tr>
+              <tr><td>200</td><td>OK. Le document est retourné correctement.</td></tr>
+              <tr><td>404</td><td>Non trouvé. Impossible de trouver cette ressource.</td></tr>
+              <tr><td>302</td><td>Rediriger. Allez ailleurs pour obtenir la ressource.</td></tr>
+              <tr><td>500</td><td>Internal Server Error</td></tr>
+            </tbody></table>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
             Asynchronous JavaScript - XMLHttpRequest 
           </div>
           <div class="content">
@@ -2318,16 +2787,87 @@
           </div>
         </div>
 
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            AJAX - XMLHttpRequest 
+          </div>
+          <div class="content">
+              <p>L'objet XMLHttpRequest permet à JavaScript côté client 
+                d'émettre des requêtes HTTP et de recevoir des réponses (qui ne doivent pas nécessairement être XML) des serveurs Web.
+              </p>
+              <ol>
+                <li>Créez un objet XMLHttpRequest avec le constructeur XMLHttpRequest().</li>
+                <li>Appelez open() pour spécifier l'URL et la méthode (généralement "GET" ou "POST") de la requête.</li>
+                <li>Définissez la propriété onreadystatechange à la fonction qui sera notifiée de la progression de la demande.</li>
+                <li>Définissez la propriété onreadystatechange à la fonction qui sera notifiée de la progression de la demande.</li>
+                <li>Appelez setRequestHeader(), si nécessaire, pour spécifier des paramètres de requête supplémentaires.</li>
+                <li>Appelez send() pour envoyer la requête au serveur web. S'il s'agit d'une requête POST, vous pouvez également passer un corps de requête à cette méthode.</li>
+                <li>Lorsque readyState vaut 4, vérifiez le code d'état pour vous assurer que la requête a abouti. Si c'est le cas, utilisez getResponseHeader() ou getResponseHeaders() pour récupérer les valeurs de l'en-tête de la réponse, et utilisez les propriétés responseText ou responseXML pour obtenir le corps de la réponse.</li>
+              </ol>
+          </div>
+        </div>
 
-          <div class="slide">
-            <div class="heading">
-              Objects
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            AJAX - XMLHttpRequest 
+          </div>
+          <div class="content">
+            <div class="iFrame-container" data-link="https://codesandbox.io/embed/xmlhttprequest-znq4ho?fontsize=14&hidenavigation=1&theme=dark">
+              <iframe src="/image/html-5-logo.svg"
+                style="width:100%; height:100%; border:0; border-radius: 4px; overflow:hidden;"
+                title="canvas rotate center"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
             </div>
           </div>
+        </div>
+
+        
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            JSON.stringify()
+          </div>
+          <div class="content">
+            <p>JSON est utilisé pour la transmission et le stockage de données structurées. Il sert de format de données lors de la transmission de données</p>
+            <p><b>Valeur nulle:</b>  est représenté par le mot-clé null.</p>
+            <p><b>Valeur booléenne: </b>est représentée par les mots-clés true et false.</p>
+            <p><b>Nombre: </b> est une suite de chiffres de 0 à 9. Cette suite peut être introduite par un signe négatif - et interrompue par un point décimal .</p>
+            <p><b>Chaîne de caractères: </b>commence et se termine par des guillemets droits doubles (")</p>
+            <p><b>Array: </b>commence par [ et se termine par ]. Il contient une liste indexée d'éléments de même type ou de types différents, séparés par des virgules. Les tableaux vides sont autorisés.</p>
+            <p><b>Object: </b>commence par { et se termine par }. Il contient une liste de propriétés non ordonnée, divisée par des virgules. Les objets sans propriétés ("objets vides") sont autorisés. </p>
+          </div>
+        </div>
+
+        <!--slide 46-->
+        <div class="slide">
+          <div class="heading">
+            JSON.stringify()
+          </div>
+          <div class="content">
+            <p>Tout objet JavaScript peut être stringifié (converti en chaîne de caractères) à l'aide de la fonction JavaScript JSON.stringify().
+            </p>
+            <iframe
+            frameborder="0"
+            height="90%"  
+            src="https://onecompiler.com/embed/javascript/3ykwr6cee"
+            width="100%"
+          ></iframe>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="heading">
+            Objects
+          </div>
+        </div>
         </section>
 
         <section class="counter">
-          <input type="number" id="index" name="index" min="1" max="114" value="1" style="width:40%"> of 114
+          <input type="number" id="index" name="index" min="1" max="130" value="1" style="width:40%"> of 130
         </section>
 
         <section class="navigation">
